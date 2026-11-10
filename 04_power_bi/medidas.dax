@@ -1,0 +1,74 @@
+// =====================================================================
+// Gas Intelligence 360° · Medidas DAX
+// Crie uma tabela vazia chamada "_Medidas" (Página Inicial > Inserir dados > OK)
+// e cole cada medida abaixo em "Nova medida".
+// =====================================================================
+
+// ---------- Financeiro ----------
+Faturado = SUM ( fato_faturamento[valor_fatura_brl] )
+
+Recebido = SUM ( fato_faturamento[valor_pago_brl] )
+
+Em Aberto = [Faturado] - [Recebido]
+
+% Inadimplência = DIVIDE ( [Em Aberto], [Faturado] )
+
+Ticket Médio Mensal = DIVIDE ( [Faturado], COUNTROWS ( fato_faturamento ) )
+
+Faturado Mês Anterior =
+CALCULATE ( [Faturado], DATEADD ( dim_tempo[data_inicio_mes], -1, MONTH ) )
+
+Var % MoM = DIVIDE ( [Faturado] - [Faturado Mês Anterior], [Faturado Mês Anterior] )
+
+Faturado YTD = TOTALYTD ( [Faturado], dim_tempo[data_inicio_mes] )
+
+% Receita do Total =
+DIVIDE ( [Faturado], CALCULATE ( [Faturado], ALL ( dim_cliente ) ) )
+
+// ---------- Cobrança ----------
+Faturas = COUNTROWS ( fato_faturamento )
+
+Atraso Médio (dias) =
+AVERAGEX (
+    FILTER ( fato_faturamento, NOT ISBLANK ( fato_faturamento[dias_atraso] ) ),
+    fato_faturamento[dias_atraso]
+)
+
+% Pago no Prazo =
+DIVIDE (
+    CALCULATE ( [Faturas], fato_faturamento[status_pagamento] = "Pago no prazo" ),
+    CALCULATE ( [Faturas], fato_faturamento[status_pagamento] <> "Sem cobrança" )
+)
+
+% Pago com Atraso =
+DIVIDE (
+    CALCULATE ( [Faturas], fato_faturamento[status_pagamento] = "Pago com atraso" ),
+    CALCULATE ( [Faturas], fato_faturamento[status_pagamento] <> "Sem cobrança" )
+)
+
+// ---------- Clientes ----------
+Contratos Ativos =
+CALCULATE ( DISTINCTCOUNT ( dim_contrato[contrato_id] ), dim_contrato[status_contrato] = "Ativo" )
+
+Ranking Devedores =
+RANKX ( ALL ( dim_cliente[cliente_id] ), [Em Aberto], , DESC, DENSE )
+
+// ---------- Operação ----------
+Volume Faturado (m³) = SUM ( fato_faturamento[volume_m3] )
+
+Volume Distribuído (m³) = SUM ( fato_operacao[volume_distribuido_m3] )
+
+Volume Medido (m³) = SUM ( fato_operacao[volume_medido_m3] )
+
+% Perda Técnica = DIVIDE ( SUM ( fato_operacao[perda_m3] ), [Volume Distribuído (m³)] )
+
+Custo por m³ = DIVIDE ( SUM ( fato_operacao[custo_operacional_brl] ), [Volume Medido (m³)] )
+
+// ---------- Ocorrências ----------
+Ocorrências = COUNTROWS ( fato_ocorrencia )
+
+Ocorrências Abertas =
+CALCULATE ( [Ocorrências], fato_ocorrencia[status_ocorrencia] = "Aberta" )
+
+Ocorrências Alta Severidade =
+CALCULATE ( [Ocorrências], fato_ocorrencia[severidade] = "Alta" )

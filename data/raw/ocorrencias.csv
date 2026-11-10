@@ -1,0 +1,151 @@
+﻿ocorrencia_id,contrato_id,data_ocorrencia,tipo_ocorrencia,severidade,status_ocorrencia
+OC0001,CTR0153,2024-07-26,Falha de medição,Alta,Resolvida
+OC0002,CTR0153,2026-01-29,Falha de medição,Baixa,Resolvida
+OC0003,CTR0172,2026-04-02,Manutenção,Baixa,Resolvida
+OC0004,CTR0289,2026-03-02,Vazamento reportado,Média,Resolvida
+OC0005,CTR0194,2025-10-04,Manutenção,Média,Resolvida
+OC0006,CTR0035,2026-05-27,Interrupção,Baixa,Resolvida
+OC0007,CTR0042,2024-04-02,Vazamento reportado,Baixa,Resolvida
+OC0008,CTR0151,2024-02-23,Falha de medição,Alta,Resolvida
+OC0009,CTR0248,2024-02-22,Manutenção,Baixa,Resolvida
+OC0010,CTR0088,2025-07-07,Falha de medição,Baixa,Resolvida
+OC0011,CTR0236,2024-08-11,Interrupção,Baixa,Resolvida
+OC0012,CTR0114,2025-09-07,Vazamento reportado,Baixa,Resolvida
+OC0013,CTR0153,2024-10-08,Falha de medição,Alta,Resolvida
+OC0014,CTR0238,2026-01-06,Manutenção,Alta,Resolvida
+OC0015,CTR0148,2025-03-08,Falha de medição,Alta,Resolvida
+OC0016,CTR0077,2026-07-02,Interrupção,Baixa,Resolvida
+OC0017,CTR0116,2026-07-24,Vazamento reportado,Média,Resolvida
+OC0018,CTR0200,2025-03-10,Falha de medição,Alta,Resolvida
+OC0019,CTR0296,2025-06-04,Manutenção,Alta,Aberta
+OC0020,CTR0107,2026-01-06,Vazamento reportado,Baixa,Resolvida
+OC0021,CTR0127,2025-10-14,Vazamento reportado,Média,Resolvida
+OC0022,CTR0062,2025-11-28,Vazamento reportado,Média,Resolvida
+OC0023,CTR0128,2025-08-20,Manutenção,Baixa,Resolvida
+OC0024,CTR0066,2026-10-06,Vazamento reportado,Baixa,Resolvida
+OC0025,CTR0286,2025-08-25,Manutenção,Alta,Resolvida
+OC0026,CTR0061,2025-06-22,Vazamento reportado,Média,Resolvida
+OC0027,CTR0026,2026-01-12,Manutenção,Alta,Resolvida
+OC0028,CTR0170,2026-10-14,Manutenção,Alta,Resolvida
+OC0029,CTR0168,2024-07-25,Vazamento reportado,Baixa,Resolvida
+OC0030,CTR0220,2024-01-03,Interrupção,Alta,Resolvida
+OC0031,CTR0171,2025-08-13,Vazamento reportado,Média,Resolvida
+OC0032,CTR0093,2025-10-18,Manutenção,Média,Resolvida
+OC0033,CTR0131,2024-04-04,Manutenção,Média,Resolvida
+OC0034,CTR0284,2024-05-06,Vazamento reportado,Média,Resolvida
+OC0035,CTR0028,2025-10-02,Vazamento reportado,Baixa,Resolvida
+OC0036,CTR0142,2025-04-30,Vazamento reportado,Baixa,Resolvida
+OC0037,CTR0186,2026-01-12,Vazamento reportado,Alta,Resolvida
+OC0038,CTR0064,2024-04-18,Vazamento reportado,Baixa,Aberta
+OC0039,CTR0011,2025-11-26,Interrupção,Alta,Resolvida
+OC0040,CTR0195,2025-05-16,Interrupção,Média,Resolvida
+OC0041,CTR0064,2024-07-29,Falha de medição,Média,Resolvida
+OC0042,CTR0148,2024-03-25,Manutenção,Baixa,Resolvida
+OC0043,CTR0157,2025-01-19,Interrupção,Baixa,Resolvida
+OC0044,CTR0224,2026-04-21,Interrupção,Média,Resolvida
+OC0045,CTR0193,2026-04-30,Falha de medição,Média,Resolvida
+OC0046,CTR0231,2026-10-06,Interrupção,Alta,Resolvida
+OC0047,CTR0184,2025-06-18,Vazamento reportado,Alta,Resolvida
+OC0048,CTR0096,2026-05-02,Interrupção,Baixa,Resolvida
+OC0049,CTR0038,2025-03-09,Interrupção,Alta,Resolvida
+OC0050,CTR0285,2024-04-05,Falha de medição,Baixa,Resolvida
+OC0051,CTR0112,2024-03-24,Manutenção,Média,Resolvida
+OC0052,CTR0018,2024-02-23,Manutenção,Alta,Resolvida
+OC0053,CTR0293,2024-07-11,Manutenção,Alta,Resolvida
+OC0054,CTR0006,2026-07-16,Manutenção,Média,Aberta
+OC0055,CTR0103,2025-09-03,Interrupção,Baixa,Resolvida
+OC0056,CTR0278,2024-03-07,Interrupção,Baixa,Aberta
+OC0057,CTR0093,2024-05-15,Manutenção,Baixa,Resolvida
+OC0058,CTR0056,2024-04-01,Vazamento reportado,Baixa,Resolvida
+OC0059,CTR0118,2025-02-12,Vazamento reportado,Média,Aberta
+OC0060,CTR0245,2025-06-27,Interrupção,Alta,Aberta
+OC0061,CTR0163,2025-05-23,Interrupção,Média,Resolvida
+OC0062,CTR0265,2026-01-22,Falha de medição,Baixa,Resolvida
+OC0063,CTR0119,2025-11-19,Vazamento reportado,Alta,Resolvida
+OC0064,CTR0079,2026-04-26,Falha de medição,Baixa,Resolvida
+OC0065,CTR0019,2025-04-05,Interrupção,Baixa,Resolvida
+OC0066,CTR0195,2024-10-04,Manutenção,Baixa,Resolvida
+OC0067,CTR0118,2026-10-02,Vazamento reportado,Média,Resolvida
+OC0068,CTR0182,2026-01-14,Falha de medição,Média,Resolvida
+OC0069,CTR0239,2024-07-07,Manutenção,Baixa,Resolvida
+OC0070,CTR0215,2026-03-01,Interrupção,Média,Resolvida
+OC0071,CTR0254,2026-04-23,Manutenção,Alta,Resolvida
+OC0072,CTR0046,2025-06-10,Falha de medição,Baixa,Resolvida
+OC0073,CTR0092,2024-04-19,Manutenção,Média,Resolvida
+OC0074,CTR0165,2025-02-19,Manutenção,Média,Resolvida
+OC0075,CTR0208,2026-01-05,Vazamento reportado,Baixa,Resolvida
+OC0076,CTR0174,2026-10-03,Interrupção,Baixa,Resolvida
+OC0077,CTR0004,2024-05-23,Vazamento reportado,Baixa,Resolvida
+OC0078,CTR0210,2026-01-03,Vazamento reportado,Média,Resolvida
+OC0079,CTR0255,2025-03-02,Interrupção,Média,Resolvida
+OC0080,CTR0280,2025-09-21,Falha de medição,Alta,Resolvida
+OC0081,CTR0013,2024-03-04,Interrupção,Média,Resolvida
+OC0082,CTR0068,2024-05-27,Manutenção,Média,Resolvida
+OC0083,CTR0200,2024-02-27,Manutenção,Baixa,Resolvida
+OC0084,CTR0242,2026-01-28,Manutenção,Média,Resolvida
+OC0085,CTR0067,2024-07-17,Vazamento reportado,Alta,Resolvida
+OC0086,CTR0248,2024-07-10,Interrupção,Média,Resolvida
+OC0087,CTR0040,2024-10-31,Vazamento reportado,Baixa,Resolvida
+OC0088,CTR0243,2025-08-11,Falha de medição,Baixa,Resolvida
+OC0089,CTR0224,2024-08-14,Falha de medição,Alta,Resolvida
+OC0090,CTR0258,2025-08-26,Falha de medição,Alta,Resolvida
+OC0091,CTR0272,2025-04-27,Interrupção,Média,Aberta
+OC0092,CTR0045,2025-09-23,Vazamento reportado,Média,Resolvida
+OC0093,CTR0002,2025-12-05,Manutenção,Baixa,Aberta
+OC0094,CTR0101,2025-03-08,Falha de medição,Alta,Aberta
+OC0095,CTR0024,2026-09-03,Interrupção,Alta,Resolvida
+OC0096,CTR0088,2025-07-15,Vazamento reportado,Alta,Resolvida
+OC0097,CTR0150,2024-05-01,Manutenção,Alta,Resolvida
+OC0098,CTR0157,2025-07-22,Vazamento reportado,Média,Aberta
+OC0099,CTR0197,2025-08-26,Vazamento reportado,Média,Resolvida
+OC0100,CTR0174,2026-06-06,Falha de medição,Baixa,Resolvida
+OC0101,CTR0037,2024-01-30,Vazamento reportado,Baixa,Resolvida
+OC0102,CTR0272,2024-05-31,Falha de medição,Média,Aberta
+OC0103,CTR0277,2025-12-28,Falha de medição,Baixa,Resolvida
+OC0104,CTR0197,2026-04-23,Falha de medição,Alta,Resolvida
+OC0105,CTR0119,2024-12-20,Interrupção,Baixa,Aberta
+OC0106,CTR0037,2024-07-26,Interrupção,Alta,Resolvida
+OC0107,CTR0089,2024-12-04,Vazamento reportado,Alta,Resolvida
+OC0108,CTR0186,2025-08-09,Manutenção,Baixa,Resolvida
+OC0109,CTR0206,2026-08-19,Falha de medição,Baixa,Resolvida
+OC0110,CTR0110,2024-06-26,Interrupção,Média,Resolvida
+OC0111,CTR0097,2026-09-11,Falha de medição,Alta,Resolvida
+OC0112,CTR0143,2024-06-10,Interrupção,Baixa,Resolvida
+OC0113,CTR0142,2026-06-16,Vazamento reportado,Alta,Resolvida
+OC0114,CTR0063,2026-02-05,Manutenção,Baixa,Resolvida
+OC0115,CTR0003,2025-01-31,Falha de medição,Média,Resolvida
+OC0116,CTR0260,2025-06-21,Manutenção,Média,Resolvida
+OC0117,CTR0191,2024-07-04,Falha de medição,Média,Resolvida
+OC0118,CTR0172,2025-12-24,Falha de medição,Média,Resolvida
+OC0119,CTR0129,2026-03-03,Interrupção,Baixa,Resolvida
+OC0120,CTR0028,2026-06-08,Falha de medição,Média,Aberta
+OC0121,CTR0248,2025-09-14,Interrupção,Baixa,Resolvida
+OC0122,CTR0146,2024-09-14,Vazamento reportado,Baixa,Aberta
+OC0123,CTR0163,2026-04-10,Falha de medição,Média,Resolvida
+OC0124,CTR0051,2025-08-18,Falha de medição,Média,Resolvida
+OC0125,CTR0015,2024-01-22,Vazamento reportado,Alta,Resolvida
+OC0126,CTR0140,2024-01-28,Interrupção,Baixa,Resolvida
+OC0127,CTR0204,2026-08-12,Falha de medição,Alta,Resolvida
+OC0128,CTR0238,2024-03-17,Manutenção,Média,Resolvida
+OC0129,CTR0116,2024-06-12,Falha de medição,Baixa,Resolvida
+OC0130,CTR0012,2026-10-20,Manutenção,Alta,Resolvida
+OC0131,CTR0230,2025-11-13,Vazamento reportado,Alta,Resolvida
+OC0132,CTR0217,2024-09-03,Manutenção,Baixa,Resolvida
+OC0133,CTR0222,2025-10-18,Manutenção,Baixa,Resolvida
+OC0134,CTR0221,2026-05-30,Manutenção,Alta,Resolvida
+OC0135,CTR0218,2024-08-30,Interrupção,Baixa,Resolvida
+OC0136,CTR0075,2026-01-22,Vazamento reportado,Média,Resolvida
+OC0137,CTR0034,2024-05-03,Vazamento reportado,Média,Aberta
+OC0138,CTR0189,2024-06-19,Falha de medição,Média,Resolvida
+OC0139,CTR0046,2025-11-27,Falha de medição,Alta,Resolvida
+OC0140,CTR0042,2024-07-05,Manutenção,Alta,Resolvida
+OC0141,CTR0274,2026-09-30,Manutenção,Baixa,Resolvida
+OC0142,CTR0287,2024-04-23,Vazamento reportado,Baixa,Resolvida
+OC0143,CTR0211,2026-04-06,Manutenção,Média,Resolvida
+OC0144,CTR0195,2024-07-24,Vazamento reportado,Média,Resolvida
+OC0145,CTR0049,2025-01-28,Interrupção,Alta,Resolvida
+OC0146,CTR0198,2025-01-12,Interrupção,Alta,Resolvida
+OC0147,CTR0177,2026-02-22,Manutenção,Baixa,Aberta
+OC0148,CTR0238,2025-12-24,Falha de medição,Baixa,Resolvida
+OC0149,CTR0178,2025-08-21,Falha de medição,Alta,Resolvida
+OC0150,CTR0032,2025-07-08,Interrupção,Baixa,Resolvida

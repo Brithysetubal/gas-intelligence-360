@@ -1,0 +1,151 @@
+ocorrencia_id,sk_contrato,sk_cliente,sk_cidade,sk_tempo,data_ocorrencia,tipo_ocorrencia,severidade,status_ocorrencia
+OC0001,153,153,2,202407,2024-07-26,Falha de medição,Alta,Resolvida
+OC0002,153,153,2,202601,2026-01-29,Falha de medição,Baixa,Resolvida
+OC0003,172,172,3,202604,2026-04-02,Manutenção,Baixa,Resolvida
+OC0004,289,289,5,202603,2026-03-02,Vazamento reportado,Média,Resolvida
+OC0005,194,194,5,202510,2025-10-04,Manutenção,Média,Resolvida
+OC0006,35,35,7,202605,2026-05-27,Interrupção,Baixa,Resolvida
+OC0007,42,42,7,202404,2024-04-02,Vazamento reportado,Baixa,Resolvida
+OC0008,151,151,1,202402,2024-02-23,Falha de medição,Alta,Resolvida
+OC0009,248,248,1,202402,2024-02-22,Manutenção,Baixa,Resolvida
+OC0010,88,88,7,202507,2025-07-07,Falha de medição,Baixa,Resolvida
+OC0011,236,236,3,202408,2024-08-11,Interrupção,Baixa,Resolvida
+OC0012,114,114,5,202509,2025-09-07,Vazamento reportado,Baixa,Resolvida
+OC0013,153,153,2,202410,2024-10-08,Falha de medição,Alta,Resolvida
+OC0014,238,238,3,202601,2026-01-06,Manutenção,Alta,Resolvida
+OC0015,148,148,1,202503,2025-03-08,Falha de medição,Alta,Resolvida
+OC0016,77,77,6,202607,2026-07-02,Interrupção,Baixa,Resolvida
+OC0017,116,116,2,202607,2026-07-24,Vazamento reportado,Média,Resolvida
+OC0018,200,200,2,202503,2025-03-10,Falha de medição,Alta,Resolvida
+OC0019,296,296,3,202506,2025-06-04,Manutenção,Alta,Aberta
+OC0020,107,107,1,202601,2026-01-06,Vazamento reportado,Baixa,Resolvida
+OC0021,127,127,2,202510,2025-10-14,Vazamento reportado,Média,Resolvida
+OC0022,62,62,6,202511,2025-11-28,Vazamento reportado,Média,Resolvida
+OC0023,128,128,3,202508,2025-08-20,Manutenção,Baixa,Resolvida
+OC0024,66,66,7,202610,2026-10-06,Vazamento reportado,Baixa,Resolvida
+OC0025,286,286,6,202508,2025-08-25,Manutenção,Alta,Resolvida
+OC0026,61,61,2,202506,2025-06-22,Vazamento reportado,Média,Resolvida
+OC0027,26,26,2,202601,2026-01-12,Manutenção,Alta,Resolvida
+OC0028,170,170,2,202610,2026-10-14,Manutenção,Alta,Resolvida
+OC0029,168,168,7,202407,2024-07-25,Vazamento reportado,Baixa,Resolvida
+OC0030,220,220,1,202401,2024-01-03,Interrupção,Alta,Resolvida
+OC0031,171,171,2,202508,2025-08-13,Vazamento reportado,Média,Resolvida
+OC0032,93,93,5,202510,2025-10-18,Manutenção,Média,Resolvida
+OC0033,131,131,3,202404,2024-04-04,Manutenção,Média,Resolvida
+OC0034,284,284,2,202405,2024-05-06,Vazamento reportado,Média,Resolvida
+OC0035,28,28,5,202510,2025-10-02,Vazamento reportado,Baixa,Resolvida
+OC0036,142,142,1,202504,2025-04-30,Vazamento reportado,Baixa,Resolvida
+OC0037,186,186,2,202601,2026-01-12,Vazamento reportado,Alta,Resolvida
+OC0038,64,64,5,202404,2024-04-18,Vazamento reportado,Baixa,Aberta
+OC0039,11,11,3,202511,2025-11-26,Interrupção,Alta,Resolvida
+OC0040,195,195,7,202505,2025-05-16,Interrupção,Média,Resolvida
+OC0041,64,64,5,202407,2024-07-29,Falha de medição,Média,Resolvida
+OC0042,148,148,1,202403,2024-03-25,Manutenção,Baixa,Resolvida
+OC0043,157,157,2,202501,2025-01-19,Interrupção,Baixa,Resolvida
+OC0044,224,224,7,202604,2026-04-21,Interrupção,Média,Resolvida
+OC0045,193,193,3,202604,2026-04-30,Falha de medição,Média,Resolvida
+OC0046,231,231,6,202610,2026-10-06,Interrupção,Alta,Resolvida
+OC0047,184,184,7,202506,2025-06-18,Vazamento reportado,Alta,Resolvida
+OC0048,96,96,6,202605,2026-05-02,Interrupção,Baixa,Resolvida
+OC0049,38,38,1,202503,2025-03-09,Interrupção,Alta,Resolvida
+OC0050,285,285,3,202404,2024-04-05,Falha de medição,Baixa,Resolvida
+OC0051,112,112,5,202403,2024-03-24,Manutenção,Média,Resolvida
+OC0052,18,18,2,202402,2024-02-23,Manutenção,Alta,Resolvida
+OC0053,293,293,3,202407,2024-07-11,Manutenção,Alta,Resolvida
+OC0054,6,6,7,202607,2026-07-16,Manutenção,Média,Aberta
+OC0055,103,103,1,202509,2025-09-03,Interrupção,Baixa,Resolvida
+OC0056,278,278,2,202403,2024-03-07,Interrupção,Baixa,Aberta
+OC0057,93,93,5,202405,2024-05-15,Manutenção,Baixa,Resolvida
+OC0058,56,56,2,202404,2024-04-01,Vazamento reportado,Baixa,Resolvida
+OC0059,118,118,5,202502,2025-02-12,Vazamento reportado,Média,Aberta
+OC0060,245,245,3,202506,2025-06-27,Interrupção,Alta,Aberta
+OC0061,163,163,5,202505,2025-05-23,Interrupção,Média,Resolvida
+OC0062,265,265,5,202601,2026-01-22,Falha de medição,Baixa,Resolvida
+OC0063,119,119,5,202511,2025-11-19,Vazamento reportado,Alta,Resolvida
+OC0064,79,79,5,202604,2026-04-26,Falha de medição,Baixa,Resolvida
+OC0065,19,19,3,202504,2025-04-05,Interrupção,Baixa,Resolvida
+OC0066,195,195,7,202410,2024-10-04,Manutenção,Baixa,Resolvida
+OC0067,118,118,5,202610,2026-10-02,Vazamento reportado,Média,Resolvida
+OC0068,182,182,1,202601,2026-01-14,Falha de medição,Média,Resolvida
+OC0069,239,239,7,202407,2024-07-07,Manutenção,Baixa,Resolvida
+OC0070,215,215,5,202603,2026-03-01,Interrupção,Média,Resolvida
+OC0071,254,254,6,202604,2026-04-23,Manutenção,Alta,Resolvida
+OC0072,46,46,6,202506,2025-06-10,Falha de medição,Baixa,Resolvida
+OC0073,92,92,6,202404,2024-04-19,Manutenção,Média,Resolvida
+OC0074,165,165,6,202502,2025-02-19,Manutenção,Média,Resolvida
+OC0075,208,208,2,202601,2026-01-05,Vazamento reportado,Baixa,Resolvida
+OC0076,174,174,7,202610,2026-10-03,Interrupção,Baixa,Resolvida
+OC0077,4,4,7,202405,2024-05-23,Vazamento reportado,Baixa,Resolvida
+OC0078,210,210,3,202601,2026-01-03,Vazamento reportado,Média,Resolvida
+OC0079,255,255,2,202503,2025-03-02,Interrupção,Média,Resolvida
+OC0080,280,280,6,202509,2025-09-21,Falha de medição,Alta,Resolvida
+OC0081,13,13,6,202403,2024-03-04,Interrupção,Média,Resolvida
+OC0082,68,68,7,202405,2024-05-27,Manutenção,Média,Resolvida
+OC0083,200,200,2,202402,2024-02-27,Manutenção,Baixa,Resolvida
+OC0084,242,242,3,202601,2026-01-28,Manutenção,Média,Resolvida
+OC0085,67,67,7,202407,2024-07-17,Vazamento reportado,Alta,Resolvida
+OC0086,248,248,1,202407,2024-07-10,Interrupção,Média,Resolvida
+OC0087,40,40,6,202410,2024-10-31,Vazamento reportado,Baixa,Resolvida
+OC0088,243,243,5,202508,2025-08-11,Falha de medição,Baixa,Resolvida
+OC0089,224,224,7,202408,2024-08-14,Falha de medição,Alta,Resolvida
+OC0090,258,258,7,202508,2025-08-26,Falha de medição,Alta,Resolvida
+OC0091,272,272,3,202504,2025-04-27,Interrupção,Média,Aberta
+OC0092,45,45,7,202509,2025-09-23,Vazamento reportado,Média,Resolvida
+OC0093,2,2,5,202512,2025-12-05,Manutenção,Baixa,Aberta
+OC0094,101,101,2,202503,2025-03-08,Falha de medição,Alta,Aberta
+OC0095,24,24,2,202609,2026-09-03,Interrupção,Alta,Resolvida
+OC0096,88,88,7,202507,2025-07-15,Vazamento reportado,Alta,Resolvida
+OC0097,150,150,5,202405,2024-05-01,Manutenção,Alta,Resolvida
+OC0098,157,157,2,202507,2025-07-22,Vazamento reportado,Média,Aberta
+OC0099,197,197,7,202508,2025-08-26,Vazamento reportado,Média,Resolvida
+OC0100,174,174,7,202606,2026-06-06,Falha de medição,Baixa,Resolvida
+OC0101,37,37,3,202401,2024-01-30,Vazamento reportado,Baixa,Resolvida
+OC0102,272,272,3,202405,2024-05-31,Falha de medição,Média,Aberta
+OC0103,277,277,1,202512,2025-12-28,Falha de medição,Baixa,Resolvida
+OC0104,197,197,7,202604,2026-04-23,Falha de medição,Alta,Resolvida
+OC0105,119,119,5,202412,2024-12-20,Interrupção,Baixa,Aberta
+OC0106,37,37,3,202407,2024-07-26,Interrupção,Alta,Resolvida
+OC0107,89,89,5,202412,2024-12-04,Vazamento reportado,Alta,Resolvida
+OC0108,186,186,2,202508,2025-08-09,Manutenção,Baixa,Resolvida
+OC0109,206,206,5,202608,2026-08-19,Falha de medição,Baixa,Resolvida
+OC0110,110,110,6,202406,2024-06-26,Interrupção,Média,Resolvida
+OC0111,97,97,3,202609,2026-09-11,Falha de medição,Alta,Resolvida
+OC0112,143,143,1,202406,2024-06-10,Interrupção,Baixa,Resolvida
+OC0113,142,142,1,202606,2026-06-16,Vazamento reportado,Alta,Resolvida
+OC0114,63,63,3,202602,2026-02-05,Manutenção,Baixa,Resolvida
+OC0115,3,3,6,202501,2025-01-31,Falha de medição,Média,Resolvida
+OC0116,260,260,3,202506,2025-06-21,Manutenção,Média,Resolvida
+OC0117,191,191,3,202407,2024-07-04,Falha de medição,Média,Resolvida
+OC0118,172,172,3,202512,2025-12-24,Falha de medição,Média,Resolvida
+OC0119,129,129,3,202603,2026-03-03,Interrupção,Baixa,Resolvida
+OC0120,28,28,5,202606,2026-06-08,Falha de medição,Média,Aberta
+OC0121,248,248,1,202509,2025-09-14,Interrupção,Baixa,Resolvida
+OC0122,146,146,3,202409,2024-09-14,Vazamento reportado,Baixa,Aberta
+OC0123,163,163,5,202604,2026-04-10,Falha de medição,Média,Resolvida
+OC0124,51,51,2,202508,2025-08-18,Falha de medição,Média,Resolvida
+OC0125,15,15,3,202401,2024-01-22,Vazamento reportado,Alta,Resolvida
+OC0126,140,140,1,202401,2024-01-28,Interrupção,Baixa,Resolvida
+OC0127,204,204,2,202608,2026-08-12,Falha de medição,Alta,Resolvida
+OC0128,238,238,3,202403,2024-03-17,Manutenção,Média,Resolvida
+OC0129,116,116,2,202406,2024-06-12,Falha de medição,Baixa,Resolvida
+OC0130,12,12,7,202610,2026-10-20,Manutenção,Alta,Resolvida
+OC0131,230,230,6,202511,2025-11-13,Vazamento reportado,Alta,Resolvida
+OC0132,217,217,2,202409,2024-09-03,Manutenção,Baixa,Resolvida
+OC0133,222,222,1,202510,2025-10-18,Manutenção,Baixa,Resolvida
+OC0134,221,221,3,202605,2026-05-30,Manutenção,Alta,Resolvida
+OC0135,218,218,3,202408,2024-08-30,Interrupção,Baixa,Resolvida
+OC0136,75,75,7,202601,2026-01-22,Vazamento reportado,Média,Resolvida
+OC0137,34,34,6,202405,2024-05-03,Vazamento reportado,Média,Aberta
+OC0138,189,189,2,202406,2024-06-19,Falha de medição,Média,Resolvida
+OC0139,46,46,6,202511,2025-11-27,Falha de medição,Alta,Resolvida
+OC0140,42,42,7,202407,2024-07-05,Manutenção,Alta,Resolvida
+OC0141,274,274,2,202609,2026-09-30,Manutenção,Baixa,Resolvida
+OC0142,287,287,6,202404,2024-04-23,Vazamento reportado,Baixa,Resolvida
+OC0143,211,211,7,202604,2026-04-06,Manutenção,Média,Resolvida
+OC0144,195,195,7,202407,2024-07-24,Vazamento reportado,Média,Resolvida
+OC0145,49,49,6,202501,2025-01-28,Interrupção,Alta,Resolvida
+OC0146,198,198,3,202501,2025-01-12,Interrupção,Alta,Resolvida
+OC0147,177,177,5,202602,2026-02-22,Manutenção,Baixa,Aberta
+OC0148,238,238,3,202512,2025-12-24,Falha de medição,Baixa,Resolvida
+OC0149,178,178,6,202508,2025-08-21,Falha de medição,Alta,Resolvida
+OC0150,32,32,3,202507,2025-07-08,Interrupção,Baixa,Resolvida

@@ -1,0 +1,14 @@
+tabela,regra,linhas_afetadas
+consumo,Remoção de linhas duplicadas,1
+consumo,Volume nulo marcado como Ausente,1
+consumo,Volume negativo invalidado,34
+clientes,Remoção de linhas duplicadas,1
+clientes,Segmento nulo inferido pela tarifa,1
+clientes,Cidade nula preenchida com 'Não informado',1
+contratos,Contrato com cliente inexistente marcado,1
+faturas,Remoção de linhas duplicadas,1
+faturas,Valor nulo recalculado (volume × tarifa),68
+faturas,Fatura zerada por leitura inválida marcada,34
+pagamentos,Quarentena: Data futura,142
+pagamentos,Quarentena: Valor zero,89
+pagamentos,Quarentena: Fatura inexistente,1

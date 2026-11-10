@@ -1,0 +1,15 @@
+{
+  "name": "Gas Intelligence 360",
+  "dataColors": ["#1F5FA8", "#E8833A", "#9AA5B1", "#2E9C8A", "#6C4AB6", "#C94F4F"],
+  "background": "#F4F6F9",
+  "foreground": "#1C2733",
+  "tableAccent": "#1F5FA8",
+  "good": "#2E9C8A",
+  "bad": "#E8833A",
+  "neutral": "#9AA5B1",
+  "textClasses": {
+    "title": { "fontFace": "Segoe UI Semibold", "fontSize": 12, "color": "#1C2733" },
+    "label": { "fontFace": "Segoe UI", "fontSize": 10, "color": "#5B6775" },
+    "callout": { "fontFace": "Segoe UI Semibold", "fontSize": 24, "color": "#1F5FA8" }
+  }
+}

@@ -1,0 +1,302 @@
+﻿cliente_id,nome_ficticio,cidade,segmento,data_cadastro,status_cliente
+CLI0001,Cliente Fictício 0001,Rio de Janeiro,Residencial,2023-07-18,Ativo
+CLI0002,Cliente Fictício 0002,Petrópolis,Residencial,2022-07-29,Ativo
+CLI0003,Cliente Fictício 0003,Rio de Janeiro,Residencial,2022-03-03,Ativo
+CLI0004,Cliente Fictício 0004,São Gonçalo,Residencial,2025-05-17,Ativo
+CLI0005,Cliente Fictício 0005,Petrópolis,Residencial,2025-08-23,Inativo
+CLI0006,Cliente Fictício 0006,São Gonçalo,Residencial,2023-07-24,Ativo
+CLI0007,Cliente Fictício 0007,Niterói,Comercial,2024-05-15,Ativo
+CLI0008,Cliente Fictício 0008,Niterói,Residencial,2023-11-21,Ativo
+CLI0009,Cliente Fictício 0009,Rio de Janeiro,Residencial,2024-01-06,Ativo
+CLI0010,Cliente Fictício 0010,Rio de Janeiro,Residencial,2024-07-29,Ativo
+CLI0011,Cliente Fictício 0011,Nova Iguaçu,Industrial,2022-06-11,Ativo
+CLI0012,Cliente Fictício 0012,São Gonçalo,Comercial,2024-01-11,Ativo
+CLI0013,Cliente Fictício 0013,Rio de Janeiro,Residencial,2025-09-16,Ativo
+CLI0014,Cliente Fictício 0014,,Comercial,2023-04-22,Ativo
+CLI0015,Cliente Fictício 0015,Nova Iguaçu,Residencial,2025-07-25,Ativo
+CLI0016,Cliente Fictício 0016,Duque de Caxias,Residencial,2023-03-06,Ativo
+CLI0017,Cliente Fictício 0017,Petrópolis,Residencial,2025-08-20,Ativo
+CLI0018,Cliente Fictício 0018,Niterói,Residencial,2024-12-29,Ativo
+CLI0019,Cliente Fictício 0019,Nova Iguaçu,Residencial,2023-07-07,Ativo
+CLI0020,Cliente Fictício 0020,Rio de Janeiro,Residencial,2023-04-15,Ativo
+CLI0021,Cliente Fictício 0021,Nova Iguaçu,Comercial,2023-07-03,Ativo
+CLI0022,Cliente Fictício 0022,São Gonçalo,Residencial,2023-10-07,Ativo
+CLI0023,Cliente Fictício 0023,Nova Iguaçu,Residencial,2025-08-09,Inativo
+CLI0024,Cliente Fictício 0024,Niterói,Residencial,2023-05-21,Ativo
+CLI0025,Cliente Fictício 0025,Nova Iguaçu,Residencial,2025-04-10,Inativo
+CLI0026,Cliente Fictício 0026,Niterói,Residencial,2024-11-09,Inativo
+CLI0027,Cliente Fictício 0027,Rio de Janeiro,Residencial,2022-08-13,Ativo
+CLI0028,Cliente Fictício 0028,Petrópolis,Residencial,2024-05-14,Ativo
+CLI0029,Cliente Fictício 0029,São Gonçalo,Residencial,2024-08-16,Ativo
+CLI0030,Cliente Fictício 0030,Rio de Janeiro,Industrial,2025-10-25,Ativo
+CLI0031,Cliente Fictício 0031,São Gonçalo,Residencial,2023-07-01,Ativo
+CLI0032,Cliente Fictício 0032,Nova Iguaçu,Residencial,2022-11-20,Inativo
+CLI0033,Cliente Fictício 0033,Petrópolis,Residencial,2023-06-24,Ativo
+CLI0034,Cliente Fictício 0034,Rio de Janeiro,Residencial,2025-07-04,Ativo
+CLI0035,Cliente Fictício 0035,São Gonçalo,Comercial,2025-06-01,Ativo
+CLI0036,Cliente Fictício 0036,Niterói,Residencial,2025-01-09,Ativo
+CLI0037,Cliente Fictício 0037,Nova Iguaçu,Residencial,2022-02-09,Ativo
+CLI0038,Cliente Fictício 0038,Duque de Caxias,Comercial,2023-05-06,Ativo
+CLI0039,Cliente Fictício 0039,São Gonçalo,Residencial,2022-06-11,Ativo
+CLI0040,Cliente Fictício 0040,Rio de Janeiro,Residencial,2024-12-26,Ativo
+CLI0041,Cliente Fictício 0041,Nova Iguaçu,Residencial,2025-01-30,Ativo
+CLI0042,Cliente Fictício 0042,São Gonçalo,,2024-05-16,Ativo
+CLI0043,Cliente Fictício 0043,Petrópolis,Comercial,2023-02-16,Ativo
+CLI0044,Cliente Fictício 0044,Petrópolis,Residencial,2025-08-23,Ativo
+CLI0045,Cliente Fictício 0045,São Gonçalo,Residencial,2024-07-13,Ativo
+CLI0046,Cliente Fictício 0046,Rio de Janeiro,Residencial,2023-11-24,Ativo
+CLI0047,Cliente Fictício 0047,Niterói,Residencial,2025-04-20,Ativo
+CLI0048,Cliente Fictício 0048,Petrópolis,Residencial,2025-07-16,Ativo
+CLI0049,Cliente Fictício 0049,Rio de Janeiro,Residencial,2023-11-08,Ativo
+CLI0050,Cliente Fictício 0050,Duque de Caxias,Residencial,2025-10-02,Inativo
+CLI0051,Cliente Fictício 0051,Niterói,Residencial,2025-03-15,Inativo
+CLI0052,Cliente Fictício 0052,Nova Iguaçu,Residencial,2024-04-13,Ativo
+CLI0053,Cliente Fictício 0053,Petrópolis,Residencial,2024-06-01,Ativo
+CLI0054,Cliente Fictício 0054,Nova Iguaçu,Residencial,2022-04-21,Ativo
+CLI0055,Cliente Fictício 0055,Petrópolis,Residencial,2023-11-26,Ativo
+CLI0056,Cliente Fictício 0056,Niterói,Residencial,2025-01-03,Inativo
+CLI0057,Cliente Fictício 0057,Niterói,Residencial,2023-07-25,Inativo
+CLI0058,Cliente Fictício 0058,Rio de Janeiro,Residencial,2024-06-26,Ativo
+CLI0059,Cliente Fictício 0059,São Gonçalo,Residencial,2022-01-31,Ativo
+CLI0060,Cliente Fictício 0060,Niterói,Comercial,2022-12-07,Inativo
+CLI0061,Cliente Fictício 0061,Niterói,Residencial,2024-04-01,Ativo
+CLI0062,Cliente Fictício 0062,Rio de Janeiro,Residencial,2024-03-10,Ativo
+CLI0063,Cliente Fictício 0063,Nova Iguaçu,Comercial,2023-08-08,Inativo
+CLI0064,Cliente Fictício 0064,Petrópolis,Residencial,2025-02-12,Inativo
+CLI0065,Cliente Fictício 0065,Duque de Caxias,Residencial,2023-03-22,Ativo
+CLI0066,Cliente Fictício 0066,São Gonçalo,Residencial,2022-05-05,Ativo
+CLI0067,Cliente Fictício 0067,São Gonçalo,Residencial,2024-09-03,Ativo
+CLI0068,Cliente Fictício 0068,São Gonçalo,Residencial,2022-06-14,Ativo
+CLI0069,Cliente Fictício 0069,Rio de Janeiro,Residencial,2025-10-14,Ativo
+CLI0070,Cliente Fictício 0070,São Gonçalo,Residencial,2023-05-20,Ativo
+CLI0071,Cliente Fictício 0071,Nova Iguaçu,Residencial,2025-09-08,Ativo
+CLI0072,Cliente Fictício 0072,Niterói,Comercial,2025-10-03,Ativo
+CLI0073,Cliente Fictício 0073,Nova Iguaçu,Residencial,2022-09-26,Ativo
+CLI0074,Cliente Fictício 0074,Rio de Janeiro,Residencial,2022-01-20,Inativo
+CLI0075,Cliente Fictício 0075,São Gonçalo,Residencial,2022-07-24,Ativo
+CLI0076,Cliente Fictício 0076,São Gonçalo,Residencial,2023-06-28,Ativo
+CLI0077,Cliente Fictício 0077,Rio de Janeiro,Comercial,2023-05-16,Ativo
+CLI0078,Cliente Fictício 0078,Nova Iguaçu,Residencial,2025-01-17,Ativo
+CLI0079,Cliente Fictício 0079,Petrópolis,Residencial,2024-12-19,Ativo
+CLI0080,Cliente Fictício 0080,São Gonçalo,Residencial,2023-09-06,Ativo
+CLI0081,Cliente Fictício 0081,Niterói,Comercial,2023-06-26,Ativo
+CLI0082,Cliente Fictício 0082,Petrópolis,Comercial,2025-02-07,Ativo
+CLI0083,Cliente Fictício 0083,São Gonçalo,Residencial,2023-03-08,Ativo
+CLI0084,Cliente Fictício 0084,Petrópolis,Residencial,2023-06-25,Inativo
+CLI0085,Cliente Fictício 0085,Rio de Janeiro,Residencial,2022-07-09,Inativo
+CLI0086,Cliente Fictício 0086,Rio de Janeiro,Comercial,2022-01-08,Ativo
+CLI0087,Cliente Fictício 0087,Petrópolis,Comercial,2023-06-21,Ativo
+CLI0088,Cliente Fictício 0088,São Gonçalo,Residencial,2024-05-25,Ativo
+CLI0089,Cliente Fictício 0089,Petrópolis,Residencial,2022-11-02,Ativo
+CLI0090,Cliente Fictício 0090,São Gonçalo,Comercial,2025-02-05,Ativo
+CLI0091,Cliente Fictício 0091,Rio de Janeiro,Residencial,2023-09-24,Ativo
+CLI0092,Cliente Fictício 0092,Rio de Janeiro,Comercial,2024-01-03,Ativo
+CLI0093,Cliente Fictício 0093,Petrópolis,Residencial,2022-07-30,Ativo
+CLI0094,Cliente Fictício 0094,Nova Iguaçu,Comercial,2025-06-25,Ativo
+CLI0095,Cliente Fictício 0095,Niterói,Comercial,2022-11-29,Ativo
+CLI0096,Cliente Fictício 0096,Rio de Janeiro,Comercial,2023-01-03,Ativo
+CLI0097,Cliente Fictício 0097,Nova Iguaçu,Comercial,2025-10-03,Ativo
+CLI0098,Cliente Fictício 0098,Petrópolis,Residencial,2022-08-10,Inativo
+CLI0099,Cliente Fictício 0099,Nova Iguaçu,Comercial,2023-04-01,Ativo
+CLI0100,Cliente Fictício 0100,Nova Iguaçu,Comercial,2023-12-18,Ativo
+CLI0101,Cliente Fictício 0101,Niterói,Comercial,2023-04-02,Ativo
+CLI0102,Cliente Fictício 0102,Nova Iguaçu,Residencial,2023-11-04,Ativo
+CLI0103,Cliente Fictício 0103,Duque de Caxias,Comercial,2023-12-21,Inativo
+CLI0104,Cliente Fictício 0104,São Gonçalo,Residencial,2023-11-10,Ativo
+CLI0105,Cliente Fictício 0105,Duque de Caxias,Residencial,2023-01-01,Ativo
+CLI0106,Cliente Fictício 0106,São Gonçalo,Residencial,2024-06-08,Ativo
+CLI0107,Cliente Fictício 0107,Duque de Caxias,Residencial,2024-06-12,Ativo
+CLI0108,Cliente Fictício 0108,São Gonçalo,Residencial,2023-01-25,Ativo
+CLI0109,Cliente Fictício 0109,Nova Iguaçu,Residencial,2022-01-04,Ativo
+CLI0110,Cliente Fictício 0110,Rio de Janeiro,Residencial,2025-09-22,Ativo
+CLI0111,Cliente Fictício 0111,Petrópolis,Residencial,2022-09-13,Ativo
+CLI0112,Cliente Fictício 0112,Petrópolis,Residencial,2024-04-16,Ativo
+CLI0113,Cliente Fictício 0113,Duque de Caxias,Residencial,2025-02-09,Ativo
+CLI0114,Cliente Fictício 0114,Petrópolis,Residencial,2024-02-16,Ativo
+CLI0115,Cliente Fictício 0115,Duque de Caxias,Residencial,2024-04-11,Ativo
+CLI0116,Cliente Fictício 0116,Niterói,Residencial,2024-05-30,Ativo
+CLI0117,Cliente Fictício 0117,Nova Iguaçu,Residencial,2025-10-15,Ativo
+CLI0118,Cliente Fictício 0118,Petrópolis,Residencial,2022-12-14,Ativo
+CLI0119,Cliente Fictício 0119,Petrópolis,Residencial,2025-07-20,Ativo
+CLI0120,Cliente Fictício 0120,Niterói,Residencial,2025-10-09,Ativo
+CLI0121,Cliente Fictício 0121,Niterói,Residencial,2022-10-29,Ativo
+CLI0122,Cliente Fictício 0122,Nova Iguaçu,Residencial,2025-06-05,Ativo
+CLI0123,Cliente Fictício 0123,Petrópolis,Residencial,2025-03-24,Ativo
+CLI0124,Cliente Fictício 0124,Nova Iguaçu,Residencial,2024-10-09,Inativo
+CLI0125,Cliente Fictício 0125,Petrópolis,Residencial,2022-01-12,Ativo
+CLI0126,Cliente Fictício 0126,Niterói,Comercial,2022-12-27,Inativo
+CLI0127,Cliente Fictício 0127,Niterói,Residencial,2022-09-06,Inativo
+CLI0128,Cliente Fictício 0128,Nova Iguaçu,Residencial,2025-09-29,Ativo
+CLI0129,Cliente Fictício 0129,Nova Iguaçu,Industrial,2025-06-08,Inativo
+CLI0130,Cliente Fictício 0130,São Gonçalo,Comercial,2024-07-02,Ativo
+CLI0131,Cliente Fictício 0131,Nova Iguaçu,Residencial,2024-07-10,Ativo
+CLI0132,Cliente Fictício 0132,Petrópolis,Comercial,2023-07-22,Inativo
+CLI0133,Cliente Fictício 0133,Duque de Caxias,Residencial,2024-06-19,Ativo
+CLI0134,Cliente Fictício 0134,Niterói,Residencial,2023-07-11,Ativo
+CLI0135,Cliente Fictício 0135,São Gonçalo,Residencial,2022-06-15,Ativo
+CLI0136,Cliente Fictício 0136,Nova Iguaçu,Residencial,2022-11-09,Ativo
+CLI0137,Cliente Fictício 0137,Nova Iguaçu,Residencial,2023-11-09,Inativo
+CLI0138,Cliente Fictício 0138,Niterói,Residencial,2024-05-10,Inativo
+CLI0139,Cliente Fictício 0139,São Gonçalo,Comercial,2022-02-10,Inativo
+CLI0140,Cliente Fictício 0140,Duque de Caxias,Residencial,2023-09-04,Inativo
+CLI0141,Cliente Fictício 0141,Nova Iguaçu,Comercial,2025-01-07,Ativo
+CLI0142,Cliente Fictício 0142,Duque de Caxias,Residencial,2024-06-11,Inativo
+CLI0143,Cliente Fictício 0143,Duque de Caxias,Residencial,2025-10-01,Inativo
+CLI0144,Cliente Fictício 0144,Nova Iguaçu,Residencial,2022-09-19,Ativo
+CLI0145,Cliente Fictício 0145,São Gonçalo,Comercial,2025-03-01,Ativo
+CLI0146,Cliente Fictício 0146,Nova Iguaçu,Residencial,2022-10-05,Inativo
+CLI0147,Cliente Fictício 0147,Duque de Caxias,Residencial,2024-02-16,Ativo
+CLI0148,Cliente Fictício 0148,Duque de Caxias,Residencial,2023-11-23,Inativo
+CLI0149,Cliente Fictício 0149,Nova Iguaçu,Residencial,2023-06-01,Ativo
+CLI0150,Cliente Fictício 0150,Petrópolis,Residencial,2025-01-09,Ativo
+CLI0151,Cliente Fictício 0151,Duque de Caxias,Industrial,2023-04-05,Ativo
+CLI0152,Cliente Fictício 0152,Petrópolis,Comercial,2022-03-24,Ativo
+CLI0153,Cliente Fictício 0153,Niterói,Comercial,2022-02-11,Ativo
+CLI0154,Cliente Fictício 0154,Nova Iguaçu,Residencial,2025-10-03,Ativo
+CLI0155,Cliente Fictício 0155,Niterói,Residencial,2024-08-10,Ativo
+CLI0156,Cliente Fictício 0156,Niterói,Comercial,2025-05-25,Ativo
+CLI0157,Cliente Fictício 0157,Niterói,Comercial,2023-09-30,Ativo
+CLI0158,Cliente Fictício 0158,Duque de Caxias,Residencial,2025-03-25,Inativo
+CLI0159,Cliente Fictício 0159,Petrópolis,Residencial,2023-02-11,Ativo
+CLI0160,Cliente Fictício 0160,Petrópolis,Residencial,2023-05-13,Ativo
+CLI0161,Cliente Fictício 0161,Duque de Caxias,Residencial,2025-05-14,Ativo
+CLI0162,Cliente Fictício 0162,São Gonçalo,Comercial,2022-03-26,Ativo
+CLI0163,Cliente Fictício 0163,Petrópolis,Residencial,2024-01-29,Ativo
+CLI0164,Cliente Fictício 0164,Duque de Caxias,Residencial,2022-01-26,Inativo
+CLI0165,Cliente Fictício 0165,Rio de Janeiro,Comercial,2024-06-06,Ativo
+CLI0166,Cliente Fictício 0166,Nova Iguaçu,Residencial,2022-11-10,Inativo
+CLI0167,Cliente Fictício 0167,São Gonçalo,Residencial,2025-08-25,Ativo
+CLI0168,Cliente Fictício 0168,São Gonçalo,Residencial,2024-09-17,Inativo
+CLI0169,Cliente Fictício 0169,Petrópolis,Residencial,2025-04-28,Ativo
+CLI0170,Cliente Fictício 0170,Niterói,Residencial,2022-06-27,Ativo
+CLI0171,Cliente Fictício 0171,Niterói,Comercial,2024-08-09,Inativo
+CLI0172,Cliente Fictício 0172,Nova Iguaçu,Residencial,2023-10-28,Ativo
+CLI0173,Cliente Fictício 0173,Duque de Caxias,Residencial,2023-06-14,Ativo
+CLI0174,Cliente Fictício 0174,São Gonçalo,Residencial,2023-07-20,Ativo
+CLI0175,Cliente Fictício 0175,Niterói,Residencial,2022-06-25,Ativo
+CLI0176,Cliente Fictício 0176,Nova Iguaçu,Residencial,2025-02-11,Ativo
+CLI0177,Cliente Fictício 0177,Petrópolis,Residencial,2024-10-02,Inativo
+CLI0178,Cliente Fictício 0178,Rio de Janeiro,Comercial,2023-08-26,Ativo
+CLI0179,Cliente Fictício 0179,Niterói,Residencial,2023-09-20,Ativo
+CLI0180,Cliente Fictício 0180,São Gonçalo,Residencial,2023-12-06,Inativo
+CLI0181,Cliente Fictício 0181,São Gonçalo,Industrial,2023-11-09,Ativo
+CLI0182,Cliente Fictício 0182,Duque de Caxias,Residencial,2023-09-20,Ativo
+CLI0183,Cliente Fictício 0183,Petrópolis,Residencial,2023-01-30,Ativo
+CLI0184,Cliente Fictício 0184,São Gonçalo,Residencial,2023-01-15,Ativo
+CLI0185,Cliente Fictício 0185,Nova Iguaçu,Residencial,2023-07-21,Ativo
+CLI0186,Cliente Fictício 0186,Niterói,Industrial,2023-08-30,Ativo
+CLI0187,Cliente Fictício 0187,Duque de Caxias,Residencial,2022-01-29,Ativo
+CLI0188,Cliente Fictício 0188,Rio de Janeiro,Residencial,2025-02-07,Ativo
+CLI0189,Cliente Fictício 0189,Niterói,Residencial,2025-07-30,Inativo
+CLI0190,Cliente Fictício 0190,Rio de Janeiro,Residencial,2025-03-21,Ativo
+CLI0191,Cliente Fictício 0191,Nova Iguaçu,Residencial,2023-11-29,Ativo
+CLI0192,Cliente Fictício 0192,Duque de Caxias,Industrial,2024-09-05,Ativo
+CLI0193,Cliente Fictício 0193,Nova Iguaçu,Comercial,2024-10-04,Ativo
+CLI0194,Cliente Fictício 0194,Petrópolis,Residencial,2022-04-20,Ativo
+CLI0195,Cliente Fictício 0195,São Gonçalo,Residencial,2023-09-15,Ativo
+CLI0196,Cliente Fictício 0196,Rio de Janeiro,Industrial,2025-02-16,Inativo
+CLI0197,Cliente Fictício 0197,São Gonçalo,Residencial,2023-04-08,Inativo
+CLI0198,Cliente Fictício 0198,Nova Iguaçu,Residencial,2023-09-01,Inativo
+CLI0199,Cliente Fictício 0199,São Gonçalo,Residencial,2022-05-04,Ativo
+CLI0200,Cliente Fictício 0200,Niterói,Comercial,2025-07-05,Ativo
+CLI0201,Cliente Fictício 0201,Rio de Janeiro,Residencial,2022-11-18,Ativo
+CLI0202,Cliente Fictício 0202,Rio de Janeiro,Residencial,2022-11-17,Ativo
+CLI0203,Cliente Fictício 0203,Petrópolis,Residencial,2025-05-01,Inativo
+CLI0204,Cliente Fictício 0204,Niterói,Residencial,2023-08-14,Ativo
+CLI0205,Cliente Fictício 0205,Nova Iguaçu,Residencial,2022-05-26,Ativo
+CLI0206,Cliente Fictício 0206,Petrópolis,Comercial,2025-04-22,Ativo
+CLI0207,Cliente Fictício 0207,São Gonçalo,Residencial,2023-04-06,Ativo
+CLI0208,Cliente Fictício 0208,Niterói,Comercial,2022-05-27,Ativo
+CLI0209,Cliente Fictício 0209,Duque de Caxias,Residencial,2025-05-03,Ativo
+CLI0210,Cliente Fictício 0210,Nova Iguaçu,Residencial,2023-09-15,Inativo
+CLI0211,Cliente Fictício 0211,São Gonçalo,Comercial,2025-01-10,Inativo
+CLI0212,Cliente Fictício 0212,São Gonçalo,Residencial,2022-03-23,Inativo
+CLI0213,Cliente Fictício 0213,São Gonçalo,Residencial,2023-05-28,Ativo
+CLI0214,Cliente Fictício 0214,Petrópolis,Residencial,2025-03-24,Ativo
+CLI0215,Cliente Fictício 0215,Petrópolis,Industrial,2023-07-06,Ativo
+CLI0216,Cliente Fictício 0216,Niterói,Comercial,2024-08-21,Inativo
+CLI0217,Cliente Fictício 0217,Niterói,Comercial,2025-04-13,Inativo
+CLI0218,Cliente Fictício 0218,Nova Iguaçu,Residencial,2022-07-06,Inativo
+CLI0219,Cliente Fictício 0219,Duque de Caxias,Residencial,2023-10-20,Ativo
+CLI0220,Cliente Fictício 0220,Duque de Caxias,Comercial,2024-04-23,Inativo
+CLI0221,Cliente Fictício 0221,Nova Iguaçu,Residencial,2025-01-31,Ativo
+CLI0222,Cliente Fictício 0222,Duque de Caxias,Residencial,2023-06-01,Ativo
+CLI0223,Cliente Fictício 0223,Nova Iguaçu,Residencial,2024-11-19,Ativo
+CLI0224,Cliente Fictício 0224,São Gonçalo,Residencial,2024-08-04,Inativo
+CLI0225,Cliente Fictício 0225,São Gonçalo,Residencial,2024-01-11,Inativo
+CLI0226,Cliente Fictício 0226,Rio de Janeiro,Residencial,2023-02-21,Ativo
+CLI0227,Cliente Fictício 0227,Duque de Caxias,Residencial,2024-06-16,Inativo
+CLI0228,Cliente Fictício 0228,Petrópolis,Residencial,2025-05-31,Ativo
+CLI0229,Cliente Fictício 0229,Duque de Caxias,Residencial,2025-02-02,Ativo
+CLI0230,Cliente Fictício 0230,Rio de Janeiro,Residencial,2023-04-06,Ativo
+CLI0231,Cliente Fictício 0231,Rio de Janeiro,Residencial,2025-08-19,Ativo
+CLI0232,Cliente Fictício 0232,Petrópolis,Residencial,2023-08-21,Ativo
+CLI0233,Cliente Fictício 0233,Nova Iguaçu,Residencial,2024-08-25,Ativo
+CLI0234,Cliente Fictício 0234,Niterói,Residencial,2024-02-25,Ativo
+CLI0235,Cliente Fictício 0235,São Gonçalo,Comercial,2022-10-07,Ativo
+CLI0236,Cliente Fictício 0236,Nova Iguaçu,Residencial,2023-11-28,Ativo
+CLI0237,Cliente Fictício 0237,Duque de Caxias,Comercial,2023-09-04,Inativo
+CLI0238,Cliente Fictício 0238,Nova Iguaçu,Comercial,2025-01-08,Inativo
+CLI0239,Cliente Fictício 0239,São Gonçalo,Residencial,2025-01-17,Inativo
+CLI0240,Cliente Fictício 0240,Duque de Caxias,Residencial,2023-01-22,Ativo
+CLI0241,Cliente Fictício 0241,Niterói,Residencial,2024-04-21,Ativo
+CLI0242,Cliente Fictício 0242,Nova Iguaçu,Residencial,2024-02-20,Inativo
+CLI0243,Cliente Fictício 0243,Petrópolis,Industrial,2022-11-08,Inativo
+CLI0244,Cliente Fictício 0244,Niterói,Industrial,2024-10-25,Ativo
+CLI0245,Cliente Fictício 0245,Nova Iguaçu,Comercial,2022-07-24,Inativo
+CLI0246,Cliente Fictício 0246,Niterói,Residencial,2024-04-19,Ativo
+CLI0247,Cliente Fictício 0247,Duque de Caxias,Residencial,2023-11-25,Inativo
+CLI0248,Cliente Fictício 0248,Duque de Caxias,Residencial,2025-10-13,Inativo
+CLI0249,Cliente Fictício 0249,Petrópolis,Industrial,2024-09-26,Ativo
+CLI0250,Cliente Fictício 0250,Niterói,Residencial,2025-07-16,Ativo
+CLI0251,Cliente Fictício 0251,Petrópolis,Industrial,2022-07-05,Inativo
+CLI0252,Cliente Fictício 0252,Petrópolis,Industrial,2022-07-25,Inativo
+CLI0253,Cliente Fictício 0253,Duque de Caxias,Residencial,2022-03-01,Ativo
+CLI0254,Cliente Fictício 0254,Rio de Janeiro,Residencial,2023-08-24,Ativo
+CLI0255,Cliente Fictício 0255,Niterói,Residencial,2023-05-16,Inativo
+CLI0256,Cliente Fictício 0256,Niterói,Residencial,2022-12-15,Ativo
+CLI0257,Cliente Fictício 0257,Nova Iguaçu,Residencial,2025-06-23,Ativo
+CLI0258,Cliente Fictício 0258,São Gonçalo,Residencial,2022-10-21,Ativo
+CLI0259,Cliente Fictício 0259,Duque de Caxias,Residencial,2024-07-30,Ativo
+CLI0260,Cliente Fictício 0260,Nova Iguaçu,Residencial,2023-08-13,Ativo
+CLI0261,Cliente Fictício 0261,Duque de Caxias,Residencial,2025-04-18,Ativo
+CLI0262,Cliente Fictício 0262,Nova Iguaçu,Residencial,2023-05-28,Inativo
+CLI0263,Cliente Fictício 0263,Niterói,Comercial,2024-02-27,Inativo
+CLI0264,Cliente Fictício 0264,Nova Iguaçu,Residencial,2025-03-17,Ativo
+CLI0265,Cliente Fictício 0265,Petrópolis,Residencial,2023-08-28,Ativo
+CLI0266,Cliente Fictício 0266,Petrópolis,Industrial,2024-03-21,Ativo
+CLI0267,Cliente Fictício 0267,Petrópolis,Residencial,2022-04-11,Inativo
+CLI0268,Cliente Fictício 0268,Duque de Caxias,Comercial,2023-04-17,Ativo
+CLI0269,Cliente Fictício 0269,Niterói,Residencial,2025-06-25,Ativo
+CLI0270,Cliente Fictício 0270,Petrópolis,Residencial,2025-09-12,Ativo
+CLI0271,Cliente Fictício 0271,Petrópolis,Residencial,2025-08-16,Ativo
+CLI0272,Cliente Fictício 0272,Nova Iguaçu,Residencial,2022-03-10,Ativo
+CLI0273,Cliente Fictício 0273,Rio de Janeiro,Residencial,2023-08-28,Ativo
+CLI0274,Cliente Fictício 0274,Niterói,Residencial,2023-02-16,Ativo
+CLI0275,Cliente Fictício 0275,Duque de Caxias,Comercial,2024-12-23,Ativo
+CLI0276,Cliente Fictício 0276,Duque de Caxias,Comercial,2024-09-13,Ativo
+CLI0277,Cliente Fictício 0277,Duque de Caxias,Residencial,2022-08-24,Inativo
+CLI0278,Cliente Fictício 0278,Niterói,Industrial,2023-04-08,Inativo
+CLI0279,Cliente Fictício 0279,São Gonçalo,Industrial,2024-01-20,Ativo
+CLI0280,Cliente Fictício 0280,Rio de Janeiro,Comercial,2023-06-26,Ativo
+CLI0281,Cliente Fictício 0281,Petrópolis,Residencial,2025-10-08,Ativo
+CLI0282,Cliente Fictício 0282,Petrópolis,Residencial,2024-01-31,Ativo
+CLI0283,Cliente Fictício 0283,Nova Iguaçu,Residencial,2022-02-21,Ativo
+CLI0284,Cliente Fictício 0284,Niterói,Comercial,2025-08-19,Ativo
+CLI0285,Cliente Fictício 0285,Nova Iguaçu,Residencial,2023-09-11,Inativo
+CLI0286,Cliente Fictício 0286,Rio de Janeiro,Residencial,2022-03-18,Ativo
+CLI0287,Cliente Fictício 0287,Rio de Janeiro,Industrial,2022-07-19,Ativo
+CLI0288,Cliente Fictício 0288,Niterói,Comercial,2024-03-06,Inativo
+CLI0289,Cliente Fictício 0289,Petrópolis,Residencial,2025-01-11,Inativo
+CLI0290,Cliente Fictício 0290,Petrópolis,Residencial,2022-11-13,Inativo
+CLI0291,Cliente Fictício 0291,Nova Iguaçu,Residencial,2025-06-14,Inativo
+CLI0292,Cliente Fictício 0292,Duque de Caxias,Comercial,2022-03-09,Ativo
+CLI0293,Cliente Fictício 0293,Nova Iguaçu,Residencial,2023-04-29,Ativo
+CLI0294,Cliente Fictício 0294,Petrópolis,Residencial,2024-01-23,Ativo
+CLI0295,Cliente Fictício 0295,Duque de Caxias,Residencial,2023-01-24,Ativo
+CLI0296,Cliente Fictício 0296,Nova Iguaçu,Comercial,2022-07-07,Ativo
+CLI0297,Cliente Fictício 0297,São Gonçalo,Residencial,2022-02-13,Ativo
+CLI0298,Cliente Fictício 0298,Niterói,Comercial,2022-09-15,Ativo
+CLI0299,Cliente Fictício 0299,São Gonçalo,Residencial,2023-03-01,Ativo
+CLI0300,Cliente Fictício 0300,Niterói,Comercial,2023-11-04,Ativo
+CLI0010,Cliente Fictício 0010,Rio de Janeiro,Residencial,2024-07-29,Ativo
