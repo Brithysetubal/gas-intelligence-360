@@ -8,60 +8,43 @@
 
 | Arquivo | Uso |
 |---|---|
-| [`medidas.dax`](medidas.dax) | Todas as medidas DAX do relatório, prontas para colar |
-| [`tema_gas360.json`](tema_gas360.json) | Tema de cores (Exibir › Temas › Procurar temas) |
-| `Gas_Intelligence_360.pbix` | Arquivo do Power BI *(adicionar após montar o relatório)* |
+| [`GasIntelligence360.pbip`](GasIntelligence360.pbip) | **Projeto do Power BI**: abra este arquivo no Power BI Desktop |
+| `GasIntelligence360.SemanticModel/` | Modelo semântico: tabelas, relacionamentos e medidas |
+| `GasIntelligence360.Report/` | Relatório com 3 páginas |
+| [`medidas.dax`](medidas.dax) | As 23 medidas DAX, para leitura e estudo |
+| [`tema_gas360.json`](tema_gas360.json) | Tema de cores do relatório |
 
-## Passo a passo
+O projeto está no formato **Power BI Project (.pbip)**: em vez de um binário `.pbix`, o modelo e o relatório ficam em arquivos de texto, versionáveis no Git.
 
-### 1. Importar o DW
-**Obter dados › Texto/CSV** e importe os 7 arquivos de [`data/dw/`](../data/dw):
-`dim_tempo`, `dim_cidade`, `dim_cliente`, `dim_contrato`, `fato_faturamento`, `fato_operacao`, `fato_ocorrencia`.
+## Como abrir
 
-No Power Query, confira os tipos: colunas `data_*` como **Data**; `valor_*`, `volume_*`, `perda_*` e `custo_*` como **Número decimal**.
+1. Baixe ou clone o repositório e abra `GasIntelligence360.pbip` no Power BI Desktop.
+   - Se aparecer erro de formato, ative em **Arquivo › Opções › Recursos de visualização › "Salvar projeto do Power BI (.pbip)"** e reinicie o Desktop.
+2. Clique em **Atualizar**. Os dados são lidos direto deste repositório no GitHub (parâmetro `UrlBase`).
+   - Se pedir credenciais, escolha **Anônimo**.
+3. Aplique o tema: **Exibir › Temas › Procurar temas** › `tema_gas360.json`.
 
-### 2. Modelagem (modelo estrela)
+> Para usar os CSVs locais em vez do GitHub, altere o parâmetro `UrlBase` em **Transformar dados › Gerenciar parâmetros**.
+
+## Modelo de dados (estrela)
 
 | De (muitos) | Para (um) | Ativa? |
 |---|---|---|
-| `fato_faturamento[sk_tempo]` | `dim_tempo[sk_tempo]` | ✅ |
-| `fato_faturamento[sk_cidade]` | `dim_cidade[sk_cidade]` | ✅ |
-| `fato_faturamento[sk_cliente]` | `dim_cliente[sk_cliente]` | ✅ |
-| `fato_faturamento[sk_contrato]` | `dim_contrato[sk_contrato]` | ✅ |
-| `fato_operacao[sk_tempo]` | `dim_tempo[sk_tempo]` | ✅ |
-| `fato_operacao[sk_cidade]` | `dim_cidade[sk_cidade]` | ✅ |
-| `fato_ocorrencia[sk_*]` | dimensões correspondentes | ✅ |
+| `fato_faturamento[sk_tempo / sk_cidade / sk_cliente / sk_contrato]` | dimensões correspondentes | ✅ |
+| `fato_operacao[sk_tempo / sk_cidade]` | `dim_tempo`, `dim_cidade` | ✅ |
+| `fato_ocorrencia[sk_tempo / sk_cidade / sk_cliente / sk_contrato]` | dimensões correspondentes | ✅ |
 | `dim_contrato[sk_cliente]` | `dim_cliente[sk_cliente]` | ❌ inativa |
 | `dim_cliente[sk_cidade]` | `dim_cidade[sk_cidade]` | ❌ inativa |
 
-> As duas últimas ficam **inativas** para evitar caminhos ambíguos: as fatos já carregam todas as chaves.
+As duas últimas ficam **inativas** para evitar caminhos ambíguos: as fatos já carregam todas as chaves.
+As medidas de tempo (`Faturado Mês Anterior`, `Faturado YTD`) usam a chave `sk_tempo` (AAAAMM), porque o calendário do DW é mensal.
 
-Depois, marque `dim_tempo` como **tabela de datas** usando `data_inicio_mes` (necessário para `DATEADD` e `TOTALYTD`).
+## Páginas do relatório
 
-### 3. Medidas
-Crie uma tabela vazia `_Medidas` e cole as medidas de [`medidas.dax`](medidas.dax).
+**1. Visão Executiva**: cartões de Faturado, Recebido, Em Aberto, % Inadimplência, Atraso Médio e % Perda Técnica; Faturado × Recebido por mês; receita por segmento; inadimplência por cidade; ranking de devedores.
 
-### 4. Páginas do relatório
+**2. Cobrança**: % pago no prazo e com atraso; faturas por situação; atraso por meio de pagamento; em aberto por segmento; matriz de inadimplência cidade × ano.
 
-**Página 1: Visão Executiva** (protótipo acima)
-- Cartões: Faturado, Recebido, Em Aberto, % Inadimplência, Atraso Médio, % Perda Técnica
-- Linhas: Faturado × Recebido por `dim_tempo[data_inicio_mes]`
-- Barras: `% Receita do Total` por `dim_cliente[segmento]`
-- Barras: `% Inadimplência` por `dim_cidade[cidade]`
-- Tabela: top devedores (`cliente_id`, `segmento`, `Em Aberto`), filtro Top N = 10
+**3. Operação**: perda técnica por mês e por cidade; custo por m³; ocorrências por tipo × severidade e por status.
 
-**Página 2: Cobrança**
-- Rosca: `Faturas` por `status_pagamento`
-- Colunas agrupadas: `Atraso Médio (dias)` e `% Pago no Prazo` por `meio_pagamento`
-- Matriz: cidade × trimestre com `% Inadimplência` (formatação condicional em escala de cores)
-
-**Página 3: Operação**
-- Linhas: `% Perda Técnica` por mês
-- Barras: `% Perda Técnica` e `Custo por m³` por cidade
-- Matriz: `tipo_ocorrencia` × `severidade` com `Ocorrências`; cartão de `Ocorrências Abertas`
-
-**Segmentações** em todas as páginas: ano, cidade, segmento, plano.
-
-### 5. Publicar
-Salve como `Gas_Intelligence_360.pbix` nesta pasta, tire prints de cada página e adicione ao README principal.
-Se tiver conta, publique no Power BI Service e coloque o link aqui.
+Todas as páginas têm segmentações por ano e por segmento ou cidade.

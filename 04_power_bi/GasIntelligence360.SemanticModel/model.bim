@@ -1,0 +1,843 @@
+{
+  "compatibilityLevel": 1567,
+  "model": {
+    "culture": "pt-BR",
+    "defaultPowerBIDataSourceVersion": "powerBI_V3",
+    "sourceQueryCulture": "pt-BR",
+    "dataAccessOptions": {
+      "legacyRedirects": true,
+      "returnErrorValuesAsNull": true
+    },
+    "tables": [
+      {
+        "name": "dim_tempo",
+        "columns": [
+          {
+            "name": "sk_tempo",
+            "dataType": "int64",
+            "sourceColumn": "sk_tempo",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "competencia",
+            "dataType": "string",
+            "sourceColumn": "competencia",
+            "summarizeBy": "none",
+            "sortByColumn": "sk_tempo"
+          },
+          {
+            "name": "data_inicio_mes",
+            "dataType": "dateTime",
+            "sourceColumn": "data_inicio_mes",
+            "summarizeBy": "none",
+            "formatString": "dd/MM/yyyy"
+          },
+          {
+            "name": "ano",
+            "dataType": "int64",
+            "sourceColumn": "ano",
+            "summarizeBy": "none",
+            "formatString": "0"
+          },
+          {
+            "name": "mes",
+            "dataType": "int64",
+            "sourceColumn": "mes",
+            "summarizeBy": "none",
+            "formatString": "0"
+          },
+          {
+            "name": "nome_mes",
+            "dataType": "string",
+            "sourceColumn": "nome_mes",
+            "summarizeBy": "none",
+            "sortByColumn": "mes"
+          },
+          {
+            "name": "trimestre",
+            "dataType": "string",
+            "sourceColumn": "trimestre",
+            "summarizeBy": "none"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "dim_tempo",
+            "mode": "import",
+            "source": {
+              "type": "m",
+              "expression": [
+                "let",
+                "    Fonte = Csv.Document(Web.Contents(UrlBase & \"dim_tempo.csv\"), [Delimiter=\",\", Encoding=65001, QuoteStyle=QuoteStyle.Csv]),",
+                "    Cabecalhos = Table.PromoteHeaders(Fonte, [PromoteAllScalars=true]),",
+                "    Tipos = Table.TransformColumnTypes(Cabecalhos, {{\"sk_tempo\", Int64.Type}, {\"competencia\", type text}, {\"data_inicio_mes\", type date}, {\"ano\", Int64.Type}, {\"mes\", Int64.Type}, {\"nome_mes\", type text}, {\"trimestre\", type text}}, \"en-US\")",
+                "in",
+                "    Tipos"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "name": "dim_cidade",
+        "columns": [
+          {
+            "name": "sk_cidade",
+            "dataType": "int64",
+            "sourceColumn": "sk_cidade",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "cidade",
+            "dataType": "string",
+            "sourceColumn": "cidade",
+            "summarizeBy": "none"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "dim_cidade",
+            "mode": "import",
+            "source": {
+              "type": "m",
+              "expression": [
+                "let",
+                "    Fonte = Csv.Document(Web.Contents(UrlBase & \"dim_cidade.csv\"), [Delimiter=\",\", Encoding=65001, QuoteStyle=QuoteStyle.Csv]),",
+                "    Cabecalhos = Table.PromoteHeaders(Fonte, [PromoteAllScalars=true]),",
+                "    Tipos = Table.TransformColumnTypes(Cabecalhos, {{\"sk_cidade\", Int64.Type}, {\"cidade\", type text}}, \"en-US\")",
+                "in",
+                "    Tipos"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "name": "dim_cliente",
+        "columns": [
+          {
+            "name": "sk_cliente",
+            "dataType": "int64",
+            "sourceColumn": "sk_cliente",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "cliente_id",
+            "dataType": "string",
+            "sourceColumn": "cliente_id",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "nome_ficticio",
+            "dataType": "string",
+            "sourceColumn": "nome_ficticio",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "sk_cidade",
+            "dataType": "int64",
+            "sourceColumn": "sk_cidade",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "segmento",
+            "dataType": "string",
+            "sourceColumn": "segmento",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "data_cadastro",
+            "dataType": "dateTime",
+            "sourceColumn": "data_cadastro",
+            "summarizeBy": "none",
+            "formatString": "dd/MM/yyyy"
+          },
+          {
+            "name": "status_cliente",
+            "dataType": "string",
+            "sourceColumn": "status_cliente",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "segmento_inferido",
+            "dataType": "int64",
+            "sourceColumn": "segmento_inferido",
+            "summarizeBy": "none"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "dim_cliente",
+            "mode": "import",
+            "source": {
+              "type": "m",
+              "expression": [
+                "let",
+                "    Fonte = Csv.Document(Web.Contents(UrlBase & \"dim_cliente.csv\"), [Delimiter=\",\", Encoding=65001, QuoteStyle=QuoteStyle.Csv]),",
+                "    Cabecalhos = Table.PromoteHeaders(Fonte, [PromoteAllScalars=true]),",
+                "    Tipos = Table.TransformColumnTypes(Cabecalhos, {{\"sk_cliente\", Int64.Type}, {\"cliente_id\", type text}, {\"nome_ficticio\", type text}, {\"sk_cidade\", Int64.Type}, {\"segmento\", type text}, {\"data_cadastro\", type date}, {\"status_cliente\", type text}, {\"segmento_inferido\", Int64.Type}}, \"en-US\")",
+                "in",
+                "    Tipos"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "name": "dim_contrato",
+        "columns": [
+          {
+            "name": "sk_contrato",
+            "dataType": "int64",
+            "sourceColumn": "sk_contrato",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "contrato_id",
+            "dataType": "string",
+            "sourceColumn": "contrato_id",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "sk_cliente",
+            "dataType": "int64",
+            "sourceColumn": "sk_cliente",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "plano",
+            "dataType": "string",
+            "sourceColumn": "plano",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "status_contrato",
+            "dataType": "string",
+            "sourceColumn": "status_contrato",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "data_inicio",
+            "dataType": "dateTime",
+            "sourceColumn": "data_inicio",
+            "summarizeBy": "none",
+            "formatString": "dd/MM/yyyy"
+          },
+          {
+            "name": "cliente_orfao",
+            "dataType": "int64",
+            "sourceColumn": "cliente_orfao",
+            "summarizeBy": "none"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "dim_contrato",
+            "mode": "import",
+            "source": {
+              "type": "m",
+              "expression": [
+                "let",
+                "    Fonte = Csv.Document(Web.Contents(UrlBase & \"dim_contrato.csv\"), [Delimiter=\",\", Encoding=65001, QuoteStyle=QuoteStyle.Csv]),",
+                "    Cabecalhos = Table.PromoteHeaders(Fonte, [PromoteAllScalars=true]),",
+                "    Tipos = Table.TransformColumnTypes(Cabecalhos, {{\"sk_contrato\", Int64.Type}, {\"contrato_id\", type text}, {\"sk_cliente\", Int64.Type}, {\"plano\", type text}, {\"status_contrato\", type text}, {\"data_inicio\", type date}, {\"cliente_orfao\", Int64.Type}}, \"en-US\")",
+                "in",
+                "    Tipos"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "name": "fato_faturamento",
+        "columns": [
+          {
+            "name": "fatura_id",
+            "dataType": "string",
+            "sourceColumn": "fatura_id",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "sk_contrato",
+            "dataType": "int64",
+            "sourceColumn": "sk_contrato",
+            "summarizeBy": "none",
+            "isHidden": true
+          },
+          {
+            "name": "sk_cliente",
+            "dataType": "int64",
+            "sourceColumn": "sk_cliente",
+            "summarizeBy": "none",
+            "isHidden": true
+          },
+          {
+            "name": "sk_cidade",
+            "dataType": "int64",
+            "sourceColumn": "sk_cidade",
+            "summarizeBy": "none",
+            "isHidden": true
+          },
+          {
+            "name": "sk_tempo",
+            "dataType": "int64",
+            "sourceColumn": "sk_tempo",
+            "summarizeBy": "none",
+            "isHidden": true
+          },
+          {
+            "name": "volume_m3",
+            "dataType": "double",
+            "sourceColumn": "volume_m3",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "tipo_leitura",
+            "dataType": "string",
+            "sourceColumn": "tipo_leitura",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "status_leitura",
+            "dataType": "string",
+            "sourceColumn": "status_leitura",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "tarifa_brl_m3",
+            "dataType": "double",
+            "sourceColumn": "tarifa_brl_m3",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "valor_fatura_brl",
+            "dataType": "double",
+            "sourceColumn": "valor_fatura_brl",
+            "summarizeBy": "sum",
+            "formatString": "\\R$ #,0.00;-\\R$ #,0.00;\\R$ #,0.00"
+          },
+          {
+            "name": "status_fatura",
+            "dataType": "string",
+            "sourceColumn": "status_fatura",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "data_vencimento",
+            "dataType": "dateTime",
+            "sourceColumn": "data_vencimento",
+            "summarizeBy": "none",
+            "formatString": "dd/MM/yyyy"
+          },
+          {
+            "name": "valor_pago_brl",
+            "dataType": "double",
+            "sourceColumn": "valor_pago_brl",
+            "summarizeBy": "sum",
+            "formatString": "\\R$ #,0.00;-\\R$ #,0.00;\\R$ #,0.00"
+          },
+          {
+            "name": "data_pagamento",
+            "dataType": "dateTime",
+            "sourceColumn": "data_pagamento",
+            "summarizeBy": "none",
+            "formatString": "dd/MM/yyyy"
+          },
+          {
+            "name": "meio_pagamento",
+            "dataType": "string",
+            "sourceColumn": "meio_pagamento",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "dias_atraso",
+            "dataType": "double",
+            "sourceColumn": "dias_atraso",
+            "summarizeBy": "average",
+            "formatString": "0"
+          },
+          {
+            "name": "status_pagamento",
+            "dataType": "string",
+            "sourceColumn": "status_pagamento",
+            "summarizeBy": "none"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "fato_faturamento",
+            "mode": "import",
+            "source": {
+              "type": "m",
+              "expression": [
+                "let",
+                "    Fonte = Csv.Document(Web.Contents(UrlBase & \"fato_faturamento.csv\"), [Delimiter=\",\", Encoding=65001, QuoteStyle=QuoteStyle.Csv]),",
+                "    Cabecalhos = Table.PromoteHeaders(Fonte, [PromoteAllScalars=true]),",
+                "    Tipos = Table.TransformColumnTypes(Cabecalhos, {{\"fatura_id\", type text}, {\"sk_contrato\", Int64.Type}, {\"sk_cliente\", Int64.Type}, {\"sk_cidade\", Int64.Type}, {\"sk_tempo\", Int64.Type}, {\"volume_m3\", type number}, {\"tipo_leitura\", type text}, {\"status_leitura\", type text}, {\"tarifa_brl_m3\", type number}, {\"valor_fatura_brl\", type number}, {\"status_fatura\", type text}, {\"data_vencimento\", type date}, {\"valor_pago_brl\", type number}, {\"data_pagamento\", type date}, {\"meio_pagamento\", type text}, {\"dias_atraso\", type number}, {\"status_pagamento\", type text}}, \"en-US\")",
+                "in",
+                "    Tipos"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "name": "fato_operacao",
+        "columns": [
+          {
+            "name": "operacao_id",
+            "dataType": "string",
+            "sourceColumn": "operacao_id",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "sk_cidade",
+            "dataType": "int64",
+            "sourceColumn": "sk_cidade",
+            "summarizeBy": "none",
+            "isHidden": true
+          },
+          {
+            "name": "sk_tempo",
+            "dataType": "int64",
+            "sourceColumn": "sk_tempo",
+            "summarizeBy": "none",
+            "isHidden": true
+          },
+          {
+            "name": "volume_distribuido_m3",
+            "dataType": "double",
+            "sourceColumn": "volume_distribuido_m3",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "volume_medido_m3",
+            "dataType": "double",
+            "sourceColumn": "volume_medido_m3",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "perda_m3",
+            "dataType": "double",
+            "sourceColumn": "perda_m3",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "custo_operacional_brl",
+            "dataType": "double",
+            "sourceColumn": "custo_operacional_brl",
+            "summarizeBy": "sum",
+            "formatString": "\\R$ #,0.00;-\\R$ #,0.00;\\R$ #,0.00"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "fato_operacao",
+            "mode": "import",
+            "source": {
+              "type": "m",
+              "expression": [
+                "let",
+                "    Fonte = Csv.Document(Web.Contents(UrlBase & \"fato_operacao.csv\"), [Delimiter=\",\", Encoding=65001, QuoteStyle=QuoteStyle.Csv]),",
+                "    Cabecalhos = Table.PromoteHeaders(Fonte, [PromoteAllScalars=true]),",
+                "    Tipos = Table.TransformColumnTypes(Cabecalhos, {{\"operacao_id\", type text}, {\"sk_cidade\", Int64.Type}, {\"sk_tempo\", Int64.Type}, {\"volume_distribuido_m3\", type number}, {\"volume_medido_m3\", type number}, {\"perda_m3\", type number}, {\"custo_operacional_brl\", type number}}, \"en-US\")",
+                "in",
+                "    Tipos"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "name": "fato_ocorrencia",
+        "columns": [
+          {
+            "name": "ocorrencia_id",
+            "dataType": "string",
+            "sourceColumn": "ocorrencia_id",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "sk_contrato",
+            "dataType": "int64",
+            "sourceColumn": "sk_contrato",
+            "summarizeBy": "none",
+            "isHidden": true
+          },
+          {
+            "name": "sk_cliente",
+            "dataType": "int64",
+            "sourceColumn": "sk_cliente",
+            "summarizeBy": "none",
+            "isHidden": true
+          },
+          {
+            "name": "sk_cidade",
+            "dataType": "int64",
+            "sourceColumn": "sk_cidade",
+            "summarizeBy": "none",
+            "isHidden": true
+          },
+          {
+            "name": "sk_tempo",
+            "dataType": "int64",
+            "sourceColumn": "sk_tempo",
+            "summarizeBy": "none",
+            "isHidden": true
+          },
+          {
+            "name": "data_ocorrencia",
+            "dataType": "dateTime",
+            "sourceColumn": "data_ocorrencia",
+            "summarizeBy": "none",
+            "formatString": "dd/MM/yyyy"
+          },
+          {
+            "name": "tipo_ocorrencia",
+            "dataType": "string",
+            "sourceColumn": "tipo_ocorrencia",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "severidade",
+            "dataType": "string",
+            "sourceColumn": "severidade",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "status_ocorrencia",
+            "dataType": "string",
+            "sourceColumn": "status_ocorrencia",
+            "summarizeBy": "none"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "fato_ocorrencia",
+            "mode": "import",
+            "source": {
+              "type": "m",
+              "expression": [
+                "let",
+                "    Fonte = Csv.Document(Web.Contents(UrlBase & \"fato_ocorrencia.csv\"), [Delimiter=\",\", Encoding=65001, QuoteStyle=QuoteStyle.Csv]),",
+                "    Cabecalhos = Table.PromoteHeaders(Fonte, [PromoteAllScalars=true]),",
+                "    Tipos = Table.TransformColumnTypes(Cabecalhos, {{\"ocorrencia_id\", type text}, {\"sk_contrato\", Int64.Type}, {\"sk_cliente\", Int64.Type}, {\"sk_cidade\", Int64.Type}, {\"sk_tempo\", Int64.Type}, {\"data_ocorrencia\", type date}, {\"tipo_ocorrencia\", type text}, {\"severidade\", type text}, {\"status_ocorrencia\", type text}}, \"en-US\")",
+                "in",
+                "    Tipos"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "name": "_Medidas",
+        "columns": [
+          {
+            "name": "Coluna",
+            "dataType": "string",
+            "sourceColumn": "Coluna",
+            "isHidden": true
+          }
+        ],
+        "partitions": [
+          {
+            "name": "_Medidas",
+            "mode": "import",
+            "source": {
+              "type": "m",
+              "expression": [
+                "let",
+                "    Fonte = #table(type table [Coluna = text], {})",
+                "in",
+                "    Fonte"
+              ]
+            }
+          }
+        ],
+        "measures": [
+          {
+            "name": "Faturado",
+            "expression": [
+              "SUM ( fato_faturamento[valor_fatura_brl] )"
+            ],
+            "formatString": "\\R$ #,0.00;-\\R$ #,0.00;\\R$ #,0.00"
+          },
+          {
+            "name": "Recebido",
+            "expression": [
+              "SUM ( fato_faturamento[valor_pago_brl] )"
+            ],
+            "formatString": "\\R$ #,0.00;-\\R$ #,0.00;\\R$ #,0.00"
+          },
+          {
+            "name": "Em Aberto",
+            "expression": [
+              "[Faturado] - [Recebido]"
+            ],
+            "formatString": "\\R$ #,0.00;-\\R$ #,0.00;\\R$ #,0.00"
+          },
+          {
+            "name": "% Inadimplência",
+            "expression": [
+              "DIVIDE ( [Em Aberto], [Faturado] )"
+            ],
+            "formatString": "0.0%;-0.0%;0.0%"
+          },
+          {
+            "name": "Ticket Médio Mensal",
+            "expression": [
+              "DIVIDE ( [Faturado], COUNTROWS ( fato_faturamento ) )"
+            ],
+            "formatString": "\\R$ #,0.00;-\\R$ #,0.00;\\R$ #,0.00"
+          },
+          {
+            "name": "Faturado Mês Anterior",
+            "expression": [
+              "VAR MesAtual = MAX ( dim_tempo[sk_tempo] )",
+              "VAR MesAnterior = IF ( MOD ( MesAtual, 100 ) = 1, MesAtual - 89, MesAtual - 1 )",
+              "RETURN",
+              "    CALCULATE ( [Faturado], ALL ( dim_tempo ), dim_tempo[sk_tempo] = MesAnterior )"
+            ],
+            "formatString": "\\R$ #,0.00;-\\R$ #,0.00;\\R$ #,0.00"
+          },
+          {
+            "name": "Var % MoM",
+            "expression": [
+              "DIVIDE ( [Faturado] - [Faturado Mês Anterior], [Faturado Mês Anterior] )"
+            ],
+            "formatString": "0.0%;-0.0%;0.0%"
+          },
+          {
+            "name": "Faturado YTD",
+            "expression": [
+              "VAR MesAtual = MAX ( dim_tempo[sk_tempo] )",
+              "RETURN",
+              "    CALCULATE (",
+              "        [Faturado],",
+              "        ALL ( dim_tempo ),",
+              "        dim_tempo[ano] = INT ( MesAtual / 100 ),",
+              "        dim_tempo[sk_tempo] <= MesAtual",
+              "    )"
+            ],
+            "formatString": "\\R$ #,0.00;-\\R$ #,0.00;\\R$ #,0.00"
+          },
+          {
+            "name": "% Receita do Total",
+            "expression": [
+              "DIVIDE ( [Faturado], CALCULATE ( [Faturado], ALL ( dim_cliente ) ) )"
+            ],
+            "formatString": "0.0%;-0.0%;0.0%"
+          },
+          {
+            "name": "Faturas",
+            "expression": [
+              "COUNTROWS ( fato_faturamento )"
+            ],
+            "formatString": "#,0"
+          },
+          {
+            "name": "Atraso Médio (dias)",
+            "expression": [
+              "AVERAGEX (",
+              "    FILTER ( fato_faturamento, NOT ISBLANK ( fato_faturamento[dias_atraso] ) ),",
+              "    fato_faturamento[dias_atraso]",
+              ")"
+            ],
+            "formatString": "0.0"
+          },
+          {
+            "name": "% Pago no Prazo",
+            "expression": [
+              "DIVIDE (",
+              "    CALCULATE ( [Faturas], fato_faturamento[status_pagamento] = \"Pago no prazo\" ),",
+              "    CALCULATE ( [Faturas], fato_faturamento[status_pagamento] <> \"Sem cobrança\" )",
+              ")"
+            ],
+            "formatString": "0.0%;-0.0%;0.0%"
+          },
+          {
+            "name": "% Pago com Atraso",
+            "expression": [
+              "DIVIDE (",
+              "    CALCULATE ( [Faturas], fato_faturamento[status_pagamento] = \"Pago com atraso\" ),",
+              "    CALCULATE ( [Faturas], fato_faturamento[status_pagamento] <> \"Sem cobrança\" )",
+              ")"
+            ],
+            "formatString": "0.0%;-0.0%;0.0%"
+          },
+          {
+            "name": "Contratos Ativos",
+            "expression": [
+              "CALCULATE ( DISTINCTCOUNT ( dim_contrato[contrato_id] ), dim_contrato[status_contrato] = \"Ativo\" )"
+            ],
+            "formatString": "#,0"
+          },
+          {
+            "name": "Ranking Devedores",
+            "expression": [
+              "RANKX ( ALL ( dim_cliente[cliente_id] ), [Em Aberto], , DESC, DENSE )"
+            ],
+            "formatString": "0"
+          },
+          {
+            "name": "Volume Faturado (m³)",
+            "expression": [
+              "SUM ( fato_faturamento[volume_m3] )"
+            ],
+            "formatString": "#,0"
+          },
+          {
+            "name": "Volume Distribuído (m³)",
+            "expression": [
+              "SUM ( fato_operacao[volume_distribuido_m3] )"
+            ],
+            "formatString": "#,0"
+          },
+          {
+            "name": "Volume Medido (m³)",
+            "expression": [
+              "SUM ( fato_operacao[volume_medido_m3] )"
+            ],
+            "formatString": "#,0"
+          },
+          {
+            "name": "% Perda Técnica",
+            "expression": [
+              "DIVIDE ( SUM ( fato_operacao[perda_m3] ), [Volume Distribuído (m³)] )"
+            ],
+            "formatString": "0.00%;-0.00%;0.00%"
+          },
+          {
+            "name": "Custo por m³",
+            "expression": [
+              "DIVIDE ( SUM ( fato_operacao[custo_operacional_brl] ), [Volume Medido (m³)] )"
+            ],
+            "formatString": "\\R$ #,0.00;-\\R$ #,0.00;\\R$ #,0.00"
+          },
+          {
+            "name": "Ocorrências",
+            "expression": [
+              "COUNTROWS ( fato_ocorrencia )"
+            ],
+            "formatString": "#,0"
+          },
+          {
+            "name": "Ocorrências Abertas",
+            "expression": [
+              "CALCULATE ( [Ocorrências], fato_ocorrencia[status_ocorrencia] = \"Aberta\" )"
+            ],
+            "formatString": "#,0"
+          },
+          {
+            "name": "Ocorrências Alta Severidade",
+            "expression": [
+              "CALCULATE ( [Ocorrências], fato_ocorrencia[severidade] = \"Alta\" )"
+            ],
+            "formatString": "#,0"
+          }
+        ]
+      }
+    ],
+    "relationships": [
+      {
+        "name": "fato_faturamento_sk_tempo",
+        "fromTable": "fato_faturamento",
+        "fromColumn": "sk_tempo",
+        "toTable": "dim_tempo",
+        "toColumn": "sk_tempo"
+      },
+      {
+        "name": "fato_faturamento_sk_cidade",
+        "fromTable": "fato_faturamento",
+        "fromColumn": "sk_cidade",
+        "toTable": "dim_cidade",
+        "toColumn": "sk_cidade"
+      },
+      {
+        "name": "fato_faturamento_sk_cliente",
+        "fromTable": "fato_faturamento",
+        "fromColumn": "sk_cliente",
+        "toTable": "dim_cliente",
+        "toColumn": "sk_cliente"
+      },
+      {
+        "name": "fato_faturamento_sk_contrato",
+        "fromTable": "fato_faturamento",
+        "fromColumn": "sk_contrato",
+        "toTable": "dim_contrato",
+        "toColumn": "sk_contrato"
+      },
+      {
+        "name": "fato_operacao_sk_tempo",
+        "fromTable": "fato_operacao",
+        "fromColumn": "sk_tempo",
+        "toTable": "dim_tempo",
+        "toColumn": "sk_tempo"
+      },
+      {
+        "name": "fato_operacao_sk_cidade",
+        "fromTable": "fato_operacao",
+        "fromColumn": "sk_cidade",
+        "toTable": "dim_cidade",
+        "toColumn": "sk_cidade"
+      },
+      {
+        "name": "fato_ocorrencia_sk_tempo",
+        "fromTable": "fato_ocorrencia",
+        "fromColumn": "sk_tempo",
+        "toTable": "dim_tempo",
+        "toColumn": "sk_tempo"
+      },
+      {
+        "name": "fato_ocorrencia_sk_cidade",
+        "fromTable": "fato_ocorrencia",
+        "fromColumn": "sk_cidade",
+        "toTable": "dim_cidade",
+        "toColumn": "sk_cidade"
+      },
+      {
+        "name": "fato_ocorrencia_sk_cliente",
+        "fromTable": "fato_ocorrencia",
+        "fromColumn": "sk_cliente",
+        "toTable": "dim_cliente",
+        "toColumn": "sk_cliente"
+      },
+      {
+        "name": "fato_ocorrencia_sk_contrato",
+        "fromTable": "fato_ocorrencia",
+        "fromColumn": "sk_contrato",
+        "toTable": "dim_contrato",
+        "toColumn": "sk_contrato"
+      },
+      {
+        "name": "dim_contrato_sk_cliente",
+        "fromTable": "dim_contrato",
+        "fromColumn": "sk_cliente",
+        "toTable": "dim_cliente",
+        "toColumn": "sk_cliente",
+        "isActive": false
+      },
+      {
+        "name": "dim_cliente_sk_cidade",
+        "fromTable": "dim_cliente",
+        "fromColumn": "sk_cidade",
+        "toTable": "dim_cidade",
+        "toColumn": "sk_cidade",
+        "isActive": false
+      }
+    ],
+    "expressions": [
+      {
+        "name": "UrlBase",
+        "kind": "m",
+        "expression": "\"https://raw.githubusercontent.com/Brithysetubal/gas-intelligence-360/main/data/dw/\" meta [IsParameterQuery=true, Type=\"Text\", IsParameterQueryRequired=true]"
+      }
+    ],
+    "annotations": [
+      {
+        "name": "__PBI_TimeIntelligenceEnabled",
+        "value": "0"
+      }
+    ]
+  }
+}

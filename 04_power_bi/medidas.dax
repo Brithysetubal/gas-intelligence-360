@@ -16,11 +16,22 @@ Em Aberto = [Faturado] - [Recebido]
 Ticket Médio Mensal = DIVIDE ( [Faturado], COUNTROWS ( fato_faturamento ) )
 
 Faturado Mês Anterior =
-CALCULATE ( [Faturado], DATEADD ( dim_tempo[data_inicio_mes], -1, MONTH ) )
+VAR MesAtual = MAX ( dim_tempo[sk_tempo] )
+VAR MesAnterior = IF ( MOD ( MesAtual, 100 ) = 1, MesAtual - 89, MesAtual - 1 )
+RETURN
+    CALCULATE ( [Faturado], ALL ( dim_tempo ), dim_tempo[sk_tempo] = MesAnterior )
 
 Var % MoM = DIVIDE ( [Faturado] - [Faturado Mês Anterior], [Faturado Mês Anterior] )
 
-Faturado YTD = TOTALYTD ( [Faturado], dim_tempo[data_inicio_mes] )
+Faturado YTD =
+VAR MesAtual = MAX ( dim_tempo[sk_tempo] )
+RETURN
+    CALCULATE (
+        [Faturado],
+        ALL ( dim_tempo ),
+        dim_tempo[ano] = INT ( MesAtual / 100 ),
+        dim_tempo[sk_tempo] <= MesAtual
+    )
 
 % Receita do Total =
 DIVIDE ( [Faturado], CALCULATE ( [Faturado], ALL ( dim_cliente ) ) )

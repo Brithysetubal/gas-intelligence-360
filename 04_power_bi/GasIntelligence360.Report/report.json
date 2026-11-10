@@ -1,0 +1,367 @@
+{
+  "config": "{\"version\": \"5.43\", \"activeSectionIndex\": 0, \"linguisticSchemaSyncVersion\": 0, \"objects\": {}}",
+  "layoutOptimization": 0,
+  "sections": [
+    {
+      "name": "ReportSection0",
+      "displayName": "Visão Executiva",
+      "displayOption": 1,
+      "width": 1280,
+      "height": 720,
+      "ordinal": 0,
+      "config": "{}",
+      "filters": "[]",
+      "visualContainers": [
+        {
+          "x": 20,
+          "y": 10,
+          "z": 0,
+          "width": 760,
+          "height": 65,
+          "config": "{\"name\": \"p1t\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 20, \"y\": 10, \"z\": 0, \"width\": 760, \"height\": 65}}], \"singleVisual\": {\"visualType\": \"textbox\", \"drillFilterOtherVisuals\": true, \"objects\": {\"general\": [{\"properties\": {\"paragraphs\": [{\"textRuns\": [{\"value\": \"Gas Intelligence 360° | Visão Executiva\", \"textStyle\": {\"fontWeight\": \"bold\", \"fontSize\": \"20pt\", \"color\": \"#1C2733\"}}]}, {\"textRuns\": [{\"value\": \"Dados fictícios · jan/2024 a out/2026\", \"textStyle\": {\"fontSize\": \"10pt\", \"color\": \"#5B6775\"}}]}]}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 1060,
+          "y": 15,
+          "z": 0,
+          "width": 200,
+          "height": 55,
+          "config": "{\"name\": \"p1s\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 1060, \"y\": 15, \"z\": 0, \"width\": 200, \"height\": 55}}], \"singleVisual\": {\"visualType\": \"slicer\", \"projections\": {\"Values\": [{\"queryRef\": \"dim_tempo.ano\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"t0\", \"Entity\": \"dim_tempo\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t0\"}}, \"Property\": \"ano\"}, \"Name\": \"dim_tempo.ano\"}]}, \"drillFilterOtherVisuals\": true, \"objects\": {\"data\": [{\"properties\": {\"mode\": {\"expr\": {\"Literal\": {\"Value\": \"'Dropdown'\"}}}}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 20,
+          "y": 80,
+          "z": 0,
+          "width": 194,
+          "height": 95,
+          "config": "{\"name\": \"p1c0\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 20, \"y\": 80, \"z\": 0, \"width\": 194, \"height\": 95}}], \"singleVisual\": {\"visualType\": \"card\", \"projections\": {\"Values\": [{\"queryRef\": \"_Medidas.Faturado\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"t0\", \"Entity\": \"_Medidas\", \"Type\": 0}], \"Select\": [{\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t0\"}}, \"Property\": \"Faturado\"}, \"Name\": \"_Medidas.Faturado\"}]}, \"drillFilterOtherVisuals\": true, \"objects\": {\"categoryLabels\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"false\"}}}}}]}, \"vcObjects\": {\"title\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'Faturado'\"}}}}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 229,
+          "y": 80,
+          "z": 0,
+          "width": 194,
+          "height": 95,
+          "config": "{\"name\": \"p1c1\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 229, \"y\": 80, \"z\": 0, \"width\": 194, \"height\": 95}}], \"singleVisual\": {\"visualType\": \"card\", \"projections\": {\"Values\": [{\"queryRef\": \"_Medidas.Recebido\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"t0\", \"Entity\": \"_Medidas\", \"Type\": 0}], \"Select\": [{\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t0\"}}, \"Property\": \"Recebido\"}, \"Name\": \"_Medidas.Recebido\"}]}, \"drillFilterOtherVisuals\": true, \"objects\": {\"categoryLabels\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"false\"}}}}}]}, \"vcObjects\": {\"title\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'Recebido'\"}}}}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 438,
+          "y": 80,
+          "z": 0,
+          "width": 194,
+          "height": 95,
+          "config": "{\"name\": \"p1c2\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 438, \"y\": 80, \"z\": 0, \"width\": 194, \"height\": 95}}], \"singleVisual\": {\"visualType\": \"card\", \"projections\": {\"Values\": [{\"queryRef\": \"_Medidas.Em Aberto\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"t0\", \"Entity\": \"_Medidas\", \"Type\": 0}], \"Select\": [{\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t0\"}}, \"Property\": \"Em Aberto\"}, \"Name\": \"_Medidas.Em Aberto\"}]}, \"drillFilterOtherVisuals\": true, \"objects\": {\"categoryLabels\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"false\"}}}}}]}, \"vcObjects\": {\"title\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'Em Aberto'\"}}}}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 647,
+          "y": 80,
+          "z": 0,
+          "width": 194,
+          "height": 95,
+          "config": "{\"name\": \"p1c3\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 647, \"y\": 80, \"z\": 0, \"width\": 194, \"height\": 95}}], \"singleVisual\": {\"visualType\": \"card\", \"projections\": {\"Values\": [{\"queryRef\": \"_Medidas.% Inadimplência\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"t0\", \"Entity\": \"_Medidas\", \"Type\": 0}], \"Select\": [{\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t0\"}}, \"Property\": \"% Inadimplência\"}, \"Name\": \"_Medidas.% Inadimplência\"}]}, \"drillFilterOtherVisuals\": true, \"objects\": {\"categoryLabels\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"false\"}}}}}]}, \"vcObjects\": {\"title\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'% Inadimplência'\"}}}}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 856,
+          "y": 80,
+          "z": 0,
+          "width": 194,
+          "height": 95,
+          "config": "{\"name\": \"p1c4\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 856, \"y\": 80, \"z\": 0, \"width\": 194, \"height\": 95}}], \"singleVisual\": {\"visualType\": \"card\", \"projections\": {\"Values\": [{\"queryRef\": \"_Medidas.Atraso Médio (dias)\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"t0\", \"Entity\": \"_Medidas\", \"Type\": 0}], \"Select\": [{\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t0\"}}, \"Property\": \"Atraso Médio (dias)\"}, \"Name\": \"_Medidas.Atraso Médio (dias)\"}]}, \"drillFilterOtherVisuals\": true, \"objects\": {\"categoryLabels\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"false\"}}}}}]}, \"vcObjects\": {\"title\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'Atraso Médio (dias)'\"}}}}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 1065,
+          "y": 80,
+          "z": 0,
+          "width": 194,
+          "height": 95,
+          "config": "{\"name\": \"p1c5\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 1065, \"y\": 80, \"z\": 0, \"width\": 194, \"height\": 95}}], \"singleVisual\": {\"visualType\": \"card\", \"projections\": {\"Values\": [{\"queryRef\": \"_Medidas.% Perda Técnica\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"t0\", \"Entity\": \"_Medidas\", \"Type\": 0}], \"Select\": [{\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t0\"}}, \"Property\": \"% Perda Técnica\"}, \"Name\": \"_Medidas.% Perda Técnica\"}]}, \"drillFilterOtherVisuals\": true, \"objects\": {\"categoryLabels\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"false\"}}}}}]}, \"vcObjects\": {\"title\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'% Perda Técnica'\"}}}}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 20,
+          "y": 190,
+          "z": 0,
+          "width": 790,
+          "height": 255,
+          "config": "{\"name\": \"p1v1\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 20, \"y\": 190, \"z\": 0, \"width\": 790, \"height\": 255}}], \"singleVisual\": {\"visualType\": \"lineChart\", \"projections\": {\"Category\": [{\"queryRef\": \"dim_tempo.data_inicio_mes\"}], \"Y\": [{\"queryRef\": \"_Medidas.Faturado\"}, {\"queryRef\": \"_Medidas.Recebido\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"t0\", \"Entity\": \"dim_tempo\", \"Type\": 0}, {\"Name\": \"t1\", \"Entity\": \"_Medidas\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t0\"}}, \"Property\": \"data_inicio_mes\"}, \"Name\": \"dim_tempo.data_inicio_mes\"}, {\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t1\"}}, \"Property\": \"Faturado\"}, \"Name\": \"_Medidas.Faturado\"}, {\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t1\"}}, \"Property\": \"Recebido\"}, \"Name\": \"_Medidas.Recebido\"}]}, \"drillFilterOtherVisuals\": true, \"vcObjects\": {\"title\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'Faturado × Recebido'\"}}}}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 825,
+          "y": 190,
+          "z": 0,
+          "width": 435,
+          "height": 255,
+          "config": "{\"name\": \"p1v2\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 825, \"y\": 190, \"z\": 0, \"width\": 435, \"height\": 255}}], \"singleVisual\": {\"visualType\": \"clusteredBarChart\", \"projections\": {\"Category\": [{\"queryRef\": \"dim_cliente.segmento\"}], \"Y\": [{\"queryRef\": \"_Medidas.% Receita do Total\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"t0\", \"Entity\": \"dim_cliente\", \"Type\": 0}, {\"Name\": \"t1\", \"Entity\": \"_Medidas\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t0\"}}, \"Property\": \"segmento\"}, \"Name\": \"dim_cliente.segmento\"}, {\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t1\"}}, \"Property\": \"% Receita do Total\"}, \"Name\": \"_Medidas.% Receita do Total\"}], \"OrderBy\": [{\"Direction\": 2, \"Expression\": {\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t1\"}}, \"Property\": \"% Receita do Total\"}}}]}, \"drillFilterOtherVisuals\": true, \"vcObjects\": {\"title\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'Receita por segmento'\"}}}}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 20,
+          "y": 460,
+          "z": 0,
+          "width": 600,
+          "height": 245,
+          "config": "{\"name\": \"p1v3\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 20, \"y\": 460, \"z\": 0, \"width\": 600, \"height\": 245}}], \"singleVisual\": {\"visualType\": \"clusteredBarChart\", \"projections\": {\"Category\": [{\"queryRef\": \"dim_cidade.cidade\"}], \"Y\": [{\"queryRef\": \"_Medidas.% Inadimplência\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"t0\", \"Entity\": \"dim_cidade\", \"Type\": 0}, {\"Name\": \"t1\", \"Entity\": \"_Medidas\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t0\"}}, \"Property\": \"cidade\"}, \"Name\": \"dim_cidade.cidade\"}, {\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t1\"}}, \"Property\": \"% Inadimplência\"}, \"Name\": \"_Medidas.% Inadimplência\"}], \"OrderBy\": [{\"Direction\": 2, \"Expression\": {\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t1\"}}, \"Property\": \"% Inadimplência\"}}}]}, \"drillFilterOtherVisuals\": true, \"vcObjects\": {\"title\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'% Inadimplência por cidade'\"}}}}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 635,
+          "y": 460,
+          "z": 0,
+          "width": 625,
+          "height": 245,
+          "config": "{\"name\": \"p1v4\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 635, \"y\": 460, \"z\": 0, \"width\": 625, \"height\": 245}}], \"singleVisual\": {\"visualType\": \"tableEx\", \"projections\": {\"Values\": [{\"queryRef\": \"dim_cliente.cliente_id\"}, {\"queryRef\": \"dim_cliente.segmento\"}, {\"queryRef\": \"_Medidas.Em Aberto\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"t0\", \"Entity\": \"dim_cliente\", \"Type\": 0}, {\"Name\": \"t1\", \"Entity\": \"_Medidas\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t0\"}}, \"Property\": \"cliente_id\"}, \"Name\": \"dim_cliente.cliente_id\"}, {\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t0\"}}, \"Property\": \"segmento\"}, \"Name\": \"dim_cliente.segmento\"}, {\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t1\"}}, \"Property\": \"Em Aberto\"}, \"Name\": \"_Medidas.Em Aberto\"}], \"OrderBy\": [{\"Direction\": 2, \"Expression\": {\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t1\"}}, \"Property\": \"Em Aberto\"}}}]}, \"drillFilterOtherVisuals\": true, \"vcObjects\": {\"title\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'Ranking de devedores'\"}}}}}]}}}",
+          "filters": "[]"
+        }
+      ]
+    },
+    {
+      "name": "ReportSection1",
+      "displayName": "Cobrança",
+      "displayOption": 1,
+      "width": 1280,
+      "height": 720,
+      "ordinal": 1,
+      "config": "{}",
+      "filters": "[]",
+      "visualContainers": [
+        {
+          "x": 20,
+          "y": 10,
+          "z": 0,
+          "width": 760,
+          "height": 65,
+          "config": "{\"name\": \"p2t\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 20, \"y\": 10, \"z\": 0, \"width\": 760, \"height\": 65}}], \"singleVisual\": {\"visualType\": \"textbox\", \"drillFilterOtherVisuals\": true, \"objects\": {\"general\": [{\"properties\": {\"paragraphs\": [{\"textRuns\": [{\"value\": \"Cobrança\", \"textStyle\": {\"fontWeight\": \"bold\", \"fontSize\": \"20pt\", \"color\": \"#1C2733\"}}]}, {\"textRuns\": [{\"value\": \"Comportamento de pagamento e inadimplência\", \"textStyle\": {\"fontSize\": \"10pt\", \"color\": \"#5B6775\"}}]}]}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 850,
+          "y": 15,
+          "z": 0,
+          "width": 200,
+          "height": 55,
+          "config": "{\"name\": \"p2s1\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 850, \"y\": 15, \"z\": 0, \"width\": 200, \"height\": 55}}], \"singleVisual\": {\"visualType\": \"slicer\", \"projections\": {\"Values\": [{\"queryRef\": \"dim_tempo.ano\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"t0\", \"Entity\": \"dim_tempo\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t0\"}}, \"Property\": \"ano\"}, \"Name\": \"dim_tempo.ano\"}]}, \"drillFilterOtherVisuals\": true, \"objects\": {\"data\": [{\"properties\": {\"mode\": {\"expr\": {\"Literal\": {\"Value\": \"'Dropdown'\"}}}}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 1060,
+          "y": 15,
+          "z": 0,
+          "width": 200,
+          "height": 55,
+          "config": "{\"name\": \"p2s2\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 1060, \"y\": 15, \"z\": 0, \"width\": 200, \"height\": 55}}], \"singleVisual\": {\"visualType\": \"slicer\", \"projections\": {\"Values\": [{\"queryRef\": \"dim_cliente.segmento\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"t0\", \"Entity\": \"dim_cliente\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t0\"}}, \"Property\": \"segmento\"}, \"Name\": \"dim_cliente.segmento\"}]}, \"drillFilterOtherVisuals\": true, \"objects\": {\"data\": [{\"properties\": {\"mode\": {\"expr\": {\"Literal\": {\"Value\": \"'Dropdown'\"}}}}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 20,
+          "y": 80,
+          "z": 0,
+          "width": 236,
+          "height": 95,
+          "config": "{\"name\": \"p2c0\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 20, \"y\": 80, \"z\": 0, \"width\": 236, \"height\": 95}}], \"singleVisual\": {\"visualType\": \"card\", \"projections\": {\"Values\": [{\"queryRef\": \"_Medidas.% Pago no Prazo\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"t0\", \"Entity\": \"_Medidas\", \"Type\": 0}], \"Select\": [{\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t0\"}}, \"Property\": \"% Pago no Prazo\"}, \"Name\": \"_Medidas.% Pago no Prazo\"}]}, \"drillFilterOtherVisuals\": true, \"objects\": {\"categoryLabels\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"false\"}}}}}]}, \"vcObjects\": {\"title\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'% Pago no Prazo'\"}}}}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 271,
+          "y": 80,
+          "z": 0,
+          "width": 236,
+          "height": 95,
+          "config": "{\"name\": \"p2c1\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 271, \"y\": 80, \"z\": 0, \"width\": 236, \"height\": 95}}], \"singleVisual\": {\"visualType\": \"card\", \"projections\": {\"Values\": [{\"queryRef\": \"_Medidas.% Pago com Atraso\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"t0\", \"Entity\": \"_Medidas\", \"Type\": 0}], \"Select\": [{\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t0\"}}, \"Property\": \"% Pago com Atraso\"}, \"Name\": \"_Medidas.% Pago com Atraso\"}]}, \"drillFilterOtherVisuals\": true, \"objects\": {\"categoryLabels\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"false\"}}}}}]}, \"vcObjects\": {\"title\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'% Pago com Atraso'\"}}}}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 522,
+          "y": 80,
+          "z": 0,
+          "width": 236,
+          "height": 95,
+          "config": "{\"name\": \"p2c2\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 522, \"y\": 80, \"z\": 0, \"width\": 236, \"height\": 95}}], \"singleVisual\": {\"visualType\": \"card\", \"projections\": {\"Values\": [{\"queryRef\": \"_Medidas.Atraso Médio (dias)\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"t0\", \"Entity\": \"_Medidas\", \"Type\": 0}], \"Select\": [{\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t0\"}}, \"Property\": \"Atraso Médio (dias)\"}, \"Name\": \"_Medidas.Atraso Médio (dias)\"}]}, \"drillFilterOtherVisuals\": true, \"objects\": {\"categoryLabels\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"false\"}}}}}]}, \"vcObjects\": {\"title\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'Atraso Médio (dias)'\"}}}}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 773,
+          "y": 80,
+          "z": 0,
+          "width": 236,
+          "height": 95,
+          "config": "{\"name\": \"p2c3\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 773, \"y\": 80, \"z\": 0, \"width\": 236, \"height\": 95}}], \"singleVisual\": {\"visualType\": \"card\", \"projections\": {\"Values\": [{\"queryRef\": \"_Medidas.Em Aberto\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"t0\", \"Entity\": \"_Medidas\", \"Type\": 0}], \"Select\": [{\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t0\"}}, \"Property\": \"Em Aberto\"}, \"Name\": \"_Medidas.Em Aberto\"}]}, \"drillFilterOtherVisuals\": true, \"objects\": {\"categoryLabels\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"false\"}}}}}]}, \"vcObjects\": {\"title\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'Em Aberto'\"}}}}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 1024,
+          "y": 80,
+          "z": 0,
+          "width": 236,
+          "height": 95,
+          "config": "{\"name\": \"p2c4\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 1024, \"y\": 80, \"z\": 0, \"width\": 236, \"height\": 95}}], \"singleVisual\": {\"visualType\": \"card\", \"projections\": {\"Values\": [{\"queryRef\": \"_Medidas.Faturas\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"t0\", \"Entity\": \"_Medidas\", \"Type\": 0}], \"Select\": [{\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t0\"}}, \"Property\": \"Faturas\"}, \"Name\": \"_Medidas.Faturas\"}]}, \"drillFilterOtherVisuals\": true, \"objects\": {\"categoryLabels\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"false\"}}}}}]}, \"vcObjects\": {\"title\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'Faturas'\"}}}}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 20,
+          "y": 190,
+          "z": 0,
+          "width": 400,
+          "height": 300,
+          "config": "{\"name\": \"p2v1\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 20, \"y\": 190, \"z\": 0, \"width\": 400, \"height\": 300}}], \"singleVisual\": {\"visualType\": \"donutChart\", \"projections\": {\"Category\": [{\"queryRef\": \"fato_faturamento.status_pagamento\"}], \"Y\": [{\"queryRef\": \"_Medidas.Faturas\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"t0\", \"Entity\": \"fato_faturamento\", \"Type\": 0}, {\"Name\": \"t1\", \"Entity\": \"_Medidas\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t0\"}}, \"Property\": \"status_pagamento\"}, \"Name\": \"fato_faturamento.status_pagamento\"}, {\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t1\"}}, \"Property\": \"Faturas\"}, \"Name\": \"_Medidas.Faturas\"}]}, \"drillFilterOtherVisuals\": true, \"vcObjects\": {\"title\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'Faturas por situação'\"}}}}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 435,
+          "y": 190,
+          "z": 0,
+          "width": 400,
+          "height": 300,
+          "config": "{\"name\": \"p2v2\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 435, \"y\": 190, \"z\": 0, \"width\": 400, \"height\": 300}}], \"singleVisual\": {\"visualType\": \"clusteredColumnChart\", \"projections\": {\"Category\": [{\"queryRef\": \"fato_faturamento.meio_pagamento\"}], \"Y\": [{\"queryRef\": \"_Medidas.Atraso Médio (dias)\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"t0\", \"Entity\": \"fato_faturamento\", \"Type\": 0}, {\"Name\": \"t1\", \"Entity\": \"_Medidas\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t0\"}}, \"Property\": \"meio_pagamento\"}, \"Name\": \"fato_faturamento.meio_pagamento\"}, {\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t1\"}}, \"Property\": \"Atraso Médio (dias)\"}, \"Name\": \"_Medidas.Atraso Médio (dias)\"}]}, \"drillFilterOtherVisuals\": true, \"vcObjects\": {\"title\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'Atraso médio por meio de pagamento'\"}}}}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 850,
+          "y": 190,
+          "z": 0,
+          "width": 410,
+          "height": 300,
+          "config": "{\"name\": \"p2v3\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 850, \"y\": 190, \"z\": 0, \"width\": 410, \"height\": 300}}], \"singleVisual\": {\"visualType\": \"clusteredColumnChart\", \"projections\": {\"Category\": [{\"queryRef\": \"dim_cliente.segmento\"}], \"Y\": [{\"queryRef\": \"_Medidas.Em Aberto\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"t0\", \"Entity\": \"dim_cliente\", \"Type\": 0}, {\"Name\": \"t1\", \"Entity\": \"_Medidas\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t0\"}}, \"Property\": \"segmento\"}, \"Name\": \"dim_cliente.segmento\"}, {\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t1\"}}, \"Property\": \"Em Aberto\"}, \"Name\": \"_Medidas.Em Aberto\"}], \"OrderBy\": [{\"Direction\": 2, \"Expression\": {\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t1\"}}, \"Property\": \"Em Aberto\"}}}]}, \"drillFilterOtherVisuals\": true, \"vcObjects\": {\"title\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'Em aberto por segmento'\"}}}}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 20,
+          "y": 505,
+          "z": 0,
+          "width": 1240,
+          "height": 200,
+          "config": "{\"name\": \"p2v4\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 20, \"y\": 505, \"z\": 0, \"width\": 1240, \"height\": 200}}], \"singleVisual\": {\"visualType\": \"pivotTable\", \"projections\": {\"Rows\": [{\"queryRef\": \"dim_cidade.cidade\"}], \"Columns\": [{\"queryRef\": \"dim_tempo.ano\"}], \"Values\": [{\"queryRef\": \"_Medidas.% Inadimplência\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"t0\", \"Entity\": \"dim_cidade\", \"Type\": 0}, {\"Name\": \"t1\", \"Entity\": \"dim_tempo\", \"Type\": 0}, {\"Name\": \"t2\", \"Entity\": \"_Medidas\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t0\"}}, \"Property\": \"cidade\"}, \"Name\": \"dim_cidade.cidade\"}, {\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t1\"}}, \"Property\": \"ano\"}, \"Name\": \"dim_tempo.ano\"}, {\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t2\"}}, \"Property\": \"% Inadimplência\"}, \"Name\": \"_Medidas.% Inadimplência\"}]}, \"drillFilterOtherVisuals\": true, \"vcObjects\": {\"title\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'% Inadimplência por cidade e ano'\"}}}}}]}}}",
+          "filters": "[]"
+        }
+      ]
+    },
+    {
+      "name": "ReportSection2",
+      "displayName": "Operação",
+      "displayOption": 1,
+      "width": 1280,
+      "height": 720,
+      "ordinal": 2,
+      "config": "{}",
+      "filters": "[]",
+      "visualContainers": [
+        {
+          "x": 20,
+          "y": 10,
+          "z": 0,
+          "width": 760,
+          "height": 65,
+          "config": "{\"name\": \"p3t\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 20, \"y\": 10, \"z\": 0, \"width\": 760, \"height\": 65}}], \"singleVisual\": {\"visualType\": \"textbox\", \"drillFilterOtherVisuals\": true, \"objects\": {\"general\": [{\"properties\": {\"paragraphs\": [{\"textRuns\": [{\"value\": \"Operação\", \"textStyle\": {\"fontWeight\": \"bold\", \"fontSize\": \"20pt\", \"color\": \"#1C2733\"}}]}, {\"textRuns\": [{\"value\": \"Perda técnica, custo e ocorrências\", \"textStyle\": {\"fontSize\": \"10pt\", \"color\": \"#5B6775\"}}]}]}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 850,
+          "y": 15,
+          "z": 0,
+          "width": 200,
+          "height": 55,
+          "config": "{\"name\": \"p3s1\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 850, \"y\": 15, \"z\": 0, \"width\": 200, \"height\": 55}}], \"singleVisual\": {\"visualType\": \"slicer\", \"projections\": {\"Values\": [{\"queryRef\": \"dim_tempo.ano\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"t0\", \"Entity\": \"dim_tempo\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t0\"}}, \"Property\": \"ano\"}, \"Name\": \"dim_tempo.ano\"}]}, \"drillFilterOtherVisuals\": true, \"objects\": {\"data\": [{\"properties\": {\"mode\": {\"expr\": {\"Literal\": {\"Value\": \"'Dropdown'\"}}}}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 1060,
+          "y": 15,
+          "z": 0,
+          "width": 200,
+          "height": 55,
+          "config": "{\"name\": \"p3s2\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 1060, \"y\": 15, \"z\": 0, \"width\": 200, \"height\": 55}}], \"singleVisual\": {\"visualType\": \"slicer\", \"projections\": {\"Values\": [{\"queryRef\": \"dim_cidade.cidade\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"t0\", \"Entity\": \"dim_cidade\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t0\"}}, \"Property\": \"cidade\"}, \"Name\": \"dim_cidade.cidade\"}]}, \"drillFilterOtherVisuals\": true, \"objects\": {\"data\": [{\"properties\": {\"mode\": {\"expr\": {\"Literal\": {\"Value\": \"'Dropdown'\"}}}}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 20,
+          "y": 80,
+          "z": 0,
+          "width": 236,
+          "height": 95,
+          "config": "{\"name\": \"p3c0\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 20, \"y\": 80, \"z\": 0, \"width\": 236, \"height\": 95}}], \"singleVisual\": {\"visualType\": \"card\", \"projections\": {\"Values\": [{\"queryRef\": \"_Medidas.% Perda Técnica\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"t0\", \"Entity\": \"_Medidas\", \"Type\": 0}], \"Select\": [{\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t0\"}}, \"Property\": \"% Perda Técnica\"}, \"Name\": \"_Medidas.% Perda Técnica\"}]}, \"drillFilterOtherVisuals\": true, \"objects\": {\"categoryLabels\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"false\"}}}}}]}, \"vcObjects\": {\"title\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'% Perda Técnica'\"}}}}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 271,
+          "y": 80,
+          "z": 0,
+          "width": 236,
+          "height": 95,
+          "config": "{\"name\": \"p3c1\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 271, \"y\": 80, \"z\": 0, \"width\": 236, \"height\": 95}}], \"singleVisual\": {\"visualType\": \"card\", \"projections\": {\"Values\": [{\"queryRef\": \"_Medidas.Custo por m³\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"t0\", \"Entity\": \"_Medidas\", \"Type\": 0}], \"Select\": [{\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t0\"}}, \"Property\": \"Custo por m³\"}, \"Name\": \"_Medidas.Custo por m³\"}]}, \"drillFilterOtherVisuals\": true, \"objects\": {\"categoryLabels\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"false\"}}}}}]}, \"vcObjects\": {\"title\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'Custo por m³'\"}}}}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 522,
+          "y": 80,
+          "z": 0,
+          "width": 236,
+          "height": 95,
+          "config": "{\"name\": \"p3c2\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 522, \"y\": 80, \"z\": 0, \"width\": 236, \"height\": 95}}], \"singleVisual\": {\"visualType\": \"card\", \"projections\": {\"Values\": [{\"queryRef\": \"_Medidas.Volume Distribuído (m³)\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"t0\", \"Entity\": \"_Medidas\", \"Type\": 0}], \"Select\": [{\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t0\"}}, \"Property\": \"Volume Distribuído (m³)\"}, \"Name\": \"_Medidas.Volume Distribuído (m³)\"}]}, \"drillFilterOtherVisuals\": true, \"objects\": {\"categoryLabels\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"false\"}}}}}]}, \"vcObjects\": {\"title\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'Volume Distribuído (m³)'\"}}}}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 773,
+          "y": 80,
+          "z": 0,
+          "width": 236,
+          "height": 95,
+          "config": "{\"name\": \"p3c3\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 773, \"y\": 80, \"z\": 0, \"width\": 236, \"height\": 95}}], \"singleVisual\": {\"visualType\": \"card\", \"projections\": {\"Values\": [{\"queryRef\": \"_Medidas.Ocorrências\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"t0\", \"Entity\": \"_Medidas\", \"Type\": 0}], \"Select\": [{\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t0\"}}, \"Property\": \"Ocorrências\"}, \"Name\": \"_Medidas.Ocorrências\"}]}, \"drillFilterOtherVisuals\": true, \"objects\": {\"categoryLabels\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"false\"}}}}}]}, \"vcObjects\": {\"title\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'Ocorrências'\"}}}}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 1024,
+          "y": 80,
+          "z": 0,
+          "width": 236,
+          "height": 95,
+          "config": "{\"name\": \"p3c4\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 1024, \"y\": 80, \"z\": 0, \"width\": 236, \"height\": 95}}], \"singleVisual\": {\"visualType\": \"card\", \"projections\": {\"Values\": [{\"queryRef\": \"_Medidas.Ocorrências Abertas\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"t0\", \"Entity\": \"_Medidas\", \"Type\": 0}], \"Select\": [{\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t0\"}}, \"Property\": \"Ocorrências Abertas\"}, \"Name\": \"_Medidas.Ocorrências Abertas\"}]}, \"drillFilterOtherVisuals\": true, \"objects\": {\"categoryLabels\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"false\"}}}}}]}, \"vcObjects\": {\"title\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'Ocorrências Abertas'\"}}}}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 20,
+          "y": 190,
+          "z": 0,
+          "width": 790,
+          "height": 255,
+          "config": "{\"name\": \"p3v1\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 20, \"y\": 190, \"z\": 0, \"width\": 790, \"height\": 255}}], \"singleVisual\": {\"visualType\": \"lineChart\", \"projections\": {\"Category\": [{\"queryRef\": \"dim_tempo.data_inicio_mes\"}], \"Y\": [{\"queryRef\": \"_Medidas.% Perda Técnica\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"t0\", \"Entity\": \"dim_tempo\", \"Type\": 0}, {\"Name\": \"t1\", \"Entity\": \"_Medidas\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t0\"}}, \"Property\": \"data_inicio_mes\"}, \"Name\": \"dim_tempo.data_inicio_mes\"}, {\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t1\"}}, \"Property\": \"% Perda Técnica\"}, \"Name\": \"_Medidas.% Perda Técnica\"}]}, \"drillFilterOtherVisuals\": true, \"vcObjects\": {\"title\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'% Perda técnica por mês'\"}}}}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 825,
+          "y": 190,
+          "z": 0,
+          "width": 435,
+          "height": 255,
+          "config": "{\"name\": \"p3v2\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 825, \"y\": 190, \"z\": 0, \"width\": 435, \"height\": 255}}], \"singleVisual\": {\"visualType\": \"clusteredBarChart\", \"projections\": {\"Category\": [{\"queryRef\": \"dim_cidade.cidade\"}], \"Y\": [{\"queryRef\": \"_Medidas.% Perda Técnica\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"t0\", \"Entity\": \"dim_cidade\", \"Type\": 0}, {\"Name\": \"t1\", \"Entity\": \"_Medidas\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t0\"}}, \"Property\": \"cidade\"}, \"Name\": \"dim_cidade.cidade\"}, {\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t1\"}}, \"Property\": \"% Perda Técnica\"}, \"Name\": \"_Medidas.% Perda Técnica\"}], \"OrderBy\": [{\"Direction\": 2, \"Expression\": {\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t1\"}}, \"Property\": \"% Perda Técnica\"}}}]}, \"drillFilterOtherVisuals\": true, \"vcObjects\": {\"title\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'% Perda técnica por cidade'\"}}}}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 20,
+          "y": 460,
+          "z": 0,
+          "width": 790,
+          "height": 245,
+          "config": "{\"name\": \"p3v3\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 20, \"y\": 460, \"z\": 0, \"width\": 790, \"height\": 245}}], \"singleVisual\": {\"visualType\": \"pivotTable\", \"projections\": {\"Rows\": [{\"queryRef\": \"fato_ocorrencia.tipo_ocorrencia\"}], \"Columns\": [{\"queryRef\": \"fato_ocorrencia.severidade\"}], \"Values\": [{\"queryRef\": \"_Medidas.Ocorrências\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"t0\", \"Entity\": \"fato_ocorrencia\", \"Type\": 0}, {\"Name\": \"t1\", \"Entity\": \"_Medidas\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t0\"}}, \"Property\": \"tipo_ocorrencia\"}, \"Name\": \"fato_ocorrencia.tipo_ocorrencia\"}, {\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t0\"}}, \"Property\": \"severidade\"}, \"Name\": \"fato_ocorrencia.severidade\"}, {\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t1\"}}, \"Property\": \"Ocorrências\"}, \"Name\": \"_Medidas.Ocorrências\"}]}, \"drillFilterOtherVisuals\": true, \"vcObjects\": {\"title\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'Ocorrências por tipo e severidade'\"}}}}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 825,
+          "y": 460,
+          "z": 0,
+          "width": 435,
+          "height": 245,
+          "config": "{\"name\": \"p3v4\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 825, \"y\": 460, \"z\": 0, \"width\": 435, \"height\": 245}}], \"singleVisual\": {\"visualType\": \"clusteredColumnChart\", \"projections\": {\"Category\": [{\"queryRef\": \"fato_ocorrencia.status_ocorrencia\"}], \"Y\": [{\"queryRef\": \"_Medidas.Ocorrências\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"t0\", \"Entity\": \"fato_ocorrencia\", \"Type\": 0}, {\"Name\": \"t1\", \"Entity\": \"_Medidas\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t0\"}}, \"Property\": \"status_ocorrencia\"}, \"Name\": \"fato_ocorrencia.status_ocorrencia\"}, {\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t1\"}}, \"Property\": \"Ocorrências\"}, \"Name\": \"_Medidas.Ocorrências\"}]}, \"drillFilterOtherVisuals\": true, \"vcObjects\": {\"title\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'Ocorrências por status'\"}}}}}]}}}",
+          "filters": "[]"
+        }
+      ]
+    }
+  ],
+  "filters": "[]"
+}

@@ -29,7 +29,7 @@ A diretoria da distribuidora quer responder:
 | **1. Importação e tratamento** | Diagnóstico de qualidade, 9 regras de limpeza documentadas, quarentena e trilha de auditoria | [notebook](01_colab/01_importacao_e_tratamento.ipynb) | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Brithysetubal/gas-intelligence-360/blob/main/01_colab/01_importacao_e_tratamento.ipynb) |
 | **2. Data Warehouse** | Modelo estrela com 4 dimensões e 3 fatos, chaves substitutas, membro desconhecido e testes de integridade | [notebook](02_data_warehouse/02_construcao_dw.ipynb) · [DDL](02_data_warehouse/ddl_modelo_estrela.sql) | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Brithysetubal/gas-intelligence-360/blob/main/02_data_warehouse/02_construcao_dw.ipynb) |
 | **3. Análises em SQL** | 12 consultas de negócio com CTEs e funções de janela | [notebook](03_sql/03_analises_sql.ipynb) · [SQL](03_sql/analises.sql) | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Brithysetubal/gas-intelligence-360/blob/main/03_sql/03_analises_sql.ipynb) |
-| **4. Dashboard Power BI** | Modelagem, 26 medidas DAX, tema e layout de 3 páginas | [guia](04_power_bi/README.md) · [DAX](04_power_bi/medidas.dax) | — |
+| **4. Dashboard Power BI** | Projeto .pbip com modelo estrela, 23 medidas DAX e relatório de 3 páginas | [projeto](04_power_bi/GasIntelligence360.pbip) · [guia](04_power_bi/README.md) · [DAX](04_power_bi/medidas.dax) | — |
 
 ---
 
@@ -122,7 +122,7 @@ gas-intelligence-360/
 ├── 01_colab/             # Etapa 1: importação e tratamento
 ├── 02_data_warehouse/    # Etapa 2: DDL e carga do modelo estrela
 ├── 03_sql/               # Etapa 3: consultas analíticas
-├── 04_power_bi/          # Etapa 4: medidas DAX, tema e guia do dashboard
+├── 04_power_bi/          # Etapa 4: projeto Power BI (.pbip), medidas DAX e tema
 └── docs/                 # dicionário de dados e imagens
 ```
 
